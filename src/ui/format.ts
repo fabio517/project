@@ -25,3 +25,11 @@ export function formatPercent(ratio: number): string {
 export function pluralize(count: number, singular: string, plural: string): string {
   return `${count} ${count === 1 ? singular : plural}`;
 }
+
+const SIZE = new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 3 });
+
+/** 0.9 -> "0,9" — o resto da tela está em pt-BR; o número cru do JS não pode vazar. */
+export function formatPackageSize(size: number): string {
+  if (!Number.isFinite(size)) return '—';
+  return SIZE.format(size);
+}

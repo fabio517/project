@@ -86,8 +86,8 @@ export function SplitPlanCard({
         {bestSingle ? (
           <p className="tabular text-xs" style={{ color: 'var(--text-secondary)' }}>
             {worth
-              ? `Economiza ${formatBRL(savingsFromSplit)} contra comprar tudo no ${bestSingle.market.name}.`
-              : `Fica ${formatBRL(Math.abs(savingsFromSplit))} mais caro que comprar tudo no ${bestSingle.market.name}.`}
+              ? `Economiza ${formatBRL(savingsFromSplit)} contra a melhor opção única (${bestSingle.market.name}, ${formatBRL(bestSingle.comparableTotal)} comparável).`
+              : `Fica ${formatBRL(Math.abs(savingsFromSplit))} mais caro que a melhor opção única (${bestSingle.market.name}, ${formatBRL(bestSingle.comparableTotal)} comparável).`}
           </p>
         ) : null}
       </div>

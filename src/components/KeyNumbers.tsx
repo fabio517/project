@@ -75,7 +75,8 @@ export function KeyNumbers({ result, scale, totalItems }: KeyNumbersProps) {
             <>
               <p className="tabular text-2xl font-bold">{formatBRL(result.savingsFromSplit)}</p>
               <p className="mt-1 text-xs" style={{ color: 'var(--text-secondary)' }}>
-                de economia em {pluralize(split.stops.length, 'parada', 'paradas')}, já contando{' '}
+                de economia contra a melhor opção única, comprando em{' '}
+                {pluralize(split.stops.length, 'parada', 'paradas')} — já com{' '}
                 {pluralize(split.stops.length, 'entrega', 'entregas')} ({formatBRL(split.deliveryTotal)})
               </p>
             </>
@@ -85,7 +86,7 @@ export function KeyNumbers({ result, scale, totalItems }: KeyNumbersProps) {
               <p className="tabular mt-2 text-xs" style={{ color: 'var(--text-secondary)' }}>
                 {result.savingsFromSplit === 0
                   ? `Dividir em ${pluralize(split.stops.length, 'parada', 'paradas')} dá exatamente no mesmo: ${formatBRL(split.total)}.`
-                  : `Dividir em ${pluralize(split.stops.length, 'parada', 'paradas')} sairia ${formatBRL(Math.abs(result.savingsFromSplit))} MAIS CARO (${formatBRL(split.total)}) — as entregas comem a diferença.`}
+                  : `Dividir em ${pluralize(split.stops.length, 'parada', 'paradas')} sairia ${formatBRL(Math.abs(result.savingsFromSplit))} mais caro que a melhor opção única: ${formatBRL(split.total)} contra ${formatBRL(best.comparableTotal)}. As entregas comem a diferença.`}
               </p>
             </>
           )

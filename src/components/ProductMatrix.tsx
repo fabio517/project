@@ -4,6 +4,7 @@
  * com ✓ e negrito (nunca só com cor). Esta é também a visão de tabela exigida
  * pela acessibilidade — todo valor do gráfico está aqui em texto.
  */
+import { formatPackageSize } from '../ui/format';
 import type { MarketQuote } from '../domain/types';
 import { formatBRL } from '../domain/money';
 import { formatUnitPrice } from '../domain/units';
@@ -22,21 +23,35 @@ export function ProductMatrix({ quotes, scale }: ProductMatrixProps) {
   const rows = quotes[0].lines;
   if (rows.length === 0) return null;
 
-  const stickyCell = 'sticky left-0 z-10';
+  const stickyCell = 'sticky left-0 z-10 border-r';
 
   return (
-    <div className="scroll-soft -mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0">
+    <>
+      {/* A legenda fica FORA do contêiner que rola: dentro da tabela ela teria a
+          largura da tabela e o fim do texto sumiria na rolagem horizontal. */}
+      <p className="mb-2 text-xs" style={{ color: 'var(--text-secondary)' }}>
+        Preço de cada produto da lista em cada mercado (quantidade já multiplicada). A célula com ✓ é a mais
+        barata da linha; “—” significa que o mercado não tem o item. A tabela rola para o lado; a coluna de
+        produtos fica fixa.
+      </p>
+      {/* `contain: paint` prende o transbordo da tabela ao contêiner: sem isso o
+          Chrome soma a largura dela ao documento e o celular ganha rolagem lateral. */}
+      <div className="scroll-soft -mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0" style={{ contain: 'paint' }}>
       <table className="w-full border-collapse text-xs" style={{ minWidth: `${180 + quotes.length * 108}px` }}>
-        <caption className="mb-2 text-left text-xs" style={{ color: 'var(--text-secondary)' }}>
-          Preço de cada produto da lista em cada mercado (quantidade já multiplicada). A célula com ✓ é a mais
-          barata da linha; “—” significa que o mercado não tem o item.
+        <caption className="sr-only">
+          Preço de cada produto da lista em cada mercado, com a quantidade já multiplicada. A célula marcada
+          com ✓ é a mais barata da linha e “—” significa que o mercado não tem o item.
         </caption>
         <thead>
           <tr>
             <th
               scope="col"
               className={`${stickyCell} border-b px-2 py-2 text-left font-semibold`}
-              style={{ background: 'var(--surface-1)', borderColor: 'var(--border-strong)', color: 'var(--text-secondary)' }}
+              style={{
+                background: 'var(--surface-1)',
+                borderColor: 'var(--border-strong)',
+                color: 'var(--text-secondary)',
+              }}
             >
               Produto
             </th>
@@ -102,7 +117,7 @@ export function ProductMatrix({ quotes, scale }: ProductMatrixProps) {
                               </p>
                               <p className="tabular" style={{ color: 'var(--text-secondary)' }}>
                                 {formatUnitPrice(cell.offer.unitPrice, cell.offer.unitKind)} ·{' '}
-                                {cell.offer.packageSize} {cell.offer.packageUnit}
+                                {formatPackageSize(cell.offer.packageSize)} {cell.offer.packageUnit}
                               </p>
                               {isCheapest ? <p className="font-semibold">Menor preço da linha</p> : null}
                             </div>
@@ -136,6 +151,7 @@ export function ProductMatrix({ quotes, scale }: ProductMatrixProps) {
           })}
         </tbody>
       </table>
-    </div>
+      </div>
+    </>
   );
 }
