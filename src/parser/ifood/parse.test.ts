@@ -108,6 +108,16 @@ describe('parseCatalogItem', () => {
     expect(offer?.packageUnit).toBe('L');
   });
 
+  it('converte pack em unidades quando o produto é comparado em un', () => {
+    const cerveja = [{ id: 'cerveja', name: 'Cerveja', category: 'Bebidas', defaultUnit: 'un' as const, keywords: ['cerveja'] }];
+    const offer = parseCatalogItem(
+      { id: 'cv', description: 'Cerveja lata 350ml Brahma 12 un', unitPrice: 41.9 },
+      { marketId: 'm1', products: cerveja },
+    );
+    expect(offer?.packageSize).toBe(12);
+    expect(offer?.packageUnit).toBe('un');
+  });
+
   it('cai nos campos estruturados quando o nome não tem embalagem', () => {
     const offer = parseCatalogItem(
       { id: 'w', description: 'Café Torrado e Moído Melitta', unitPrice: 18.9, weight: 500, unit: 'g' }, ctx,

@@ -114,15 +114,23 @@ function buildQuote(
   entries: ListEntry[],
   index: BestOfferIndex,
   options: CompareOptions,
+  referenceCost: ReadonlyMap<string, Centavos | null>,
 ): MarketQuote {
   const lines: QuoteLine[] = [];
   const missingProductIds: string[] = [];
+  const unpricedProductIds: string[] = [];
   let subtotal = 0;
+  let imputedCost = 0;
 
   for (const entry of entries) {
     const offer = index.get(entry.productId)?.get(market.id) ?? null;
     const line = makeLine(entry, offer);
-    if (!offer) missingProductIds.push(entry.productId);
+    if (!offer) {
+      missingProductIds.push(entry.productId);
+      const reference = referenceCost.get(entry.productId) ?? null;
+      if (reference === null) unpricedProductIds.push(entry.productId);
+      else imputedCost += reference;
+    }
     subtotal += line.lineTotal;
     lines.push(line);
   }
@@ -140,6 +148,9 @@ function buildQuote(
     subtotal,
     deliveryFee,
     total: subtotal + deliveryFee,
+    imputedCost,
+    comparableTotal: subtotal + imputedCost + deliveryFee,
+    unpricedProductIds,
     meetsMinOrder: subtotal >= market.minOrder,
     shortfallToMinOrder,
     coverage: entries.length === 0 ? 0 : foundCount / entries.length,
@@ -147,23 +158,29 @@ function buildQuote(
 }
 
 /**
- * Cobertura ANTES de preço: um mercado que não tem metade da lista fica
- * artificialmente barato, e deixá-lo no topo seria mentir para o usuário.
- * Comparamos `foundCount` (inteiro) em vez de `coverage` (float) porque o
- * denominador é o mesmo para todos os mercados — mesma ordem, sem risco de
- * empate por arredondamento.
+ * Ordena pelo total COMPARÁVEL, não pelo total cru.
+ *
+ * Comparar o total cru puniria o mercado incompleto ou o premiaria, conforme
+ * o caso: um mercado que não tem metade da lista fica artificialmente barato.
+ * A saída não é ignorar o preço e ordenar por cobertura — isso mandaria o
+ * usuário pagar R$ 136 a mais para levar um item a mais. A saída é imputar:
+ * o item que falta é precificado pelo menor preço onde existe, somado a todos
+ * os candidatos. Aí toda cesta cobre a mesma lista e os totais voltam a
+ * significar a mesma coisa.
+ *
+ * Cobertura sobrevive como desempate, para preferir quem resolve a compra
+ * numa parada só quando o custo empata.
  */
-function byCoverageThenTotal(a: MarketQuote, b: MarketQuote): number {
+function byComparableTotal(a: MarketQuote, b: MarketQuote): number {
+  if (a.comparableTotal !== b.comparableTotal) return a.comparableTotal - b.comparableTotal;
   if (a.foundCount !== b.foundCount) return b.foundCount - a.foundCount;
-  if (a.total !== b.total) return a.total - b.total;
   return compareIds(a.market.id, b.market.id);
 }
 
-/** Só faz sentido comparar totais entre mercados que cobrem a mesma coisa. */
-function spreadAmongBestCoverage(quotes: MarketQuote[]): Centavos {
+/** Com a imputação, todos os totais comparáveis cobrem a mesma cesta. */
+function spreadAmongQuotes(quotes: MarketQuote[]): Centavos {
   if (quotes.length === 0) return 0;
-  const maxFound = Math.max(...quotes.map((quote) => quote.foundCount));
-  const totals = quotes.filter((q) => q.foundCount === maxFound).map((q) => q.total);
+  const totals = quotes.map((q) => q.comparableTotal);
   return Math.max(...totals) - Math.min(...totals);
 }
 
@@ -373,9 +390,17 @@ export function compare(
 
   const index = buildBestOfferIndex(catalog, entries, options);
 
+  // Custo de referência de cada item: o menor preço onde ele existe. É o que
+  // permite imputar o item faltante e tornar as cestas comparáveis.
+  const referenceCost = new Map<string, Centavos | null>();
+  for (const entry of entries) {
+    const best = bestMarketFor(entry, index, null);
+    referenceCost.set(entry.productId, best ? best.lineTotal : null);
+  }
+
   const quotes = catalog.markets
-    .map((market) => buildQuote(market, entries, index, options))
-    .sort(byCoverageThenTotal);
+    .map((market) => buildQuote(market, entries, index, options, referenceCost))
+    .sort(byComparableTotal);
   const bestSingle = quotes[0] ?? null;
 
   const split = buildSplit(catalog, entries, index, options);
@@ -392,8 +417,8 @@ export function compare(
     split,
     // Pode ser negativo (dividir custa mais caro): a UI precisa poder dizer
     // "não compensa", então não forçamos o piso em zero.
-    savingsFromSplit: bestSingle ? bestSingle.total - split.total : 0,
-    spread: spreadAmongBestCoverage(quotes),
+    savingsFromSplit: bestSingle ? bestSingle.comparableTotal - split.total : 0,
+    spread: spreadAmongQuotes(quotes),
     cheapestByProduct,
   };
 }

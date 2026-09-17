@@ -41,25 +41,28 @@ describe('ponta a ponta com o seed real', () => {
 
     expect(r.bestSingle).not.toBeNull();
     expect(r.quotes.length).toBeGreaterThan(0);
-    // o melhor mercado nao pode ter cobertura pior que qualquer outro
-    const maxCov = Math.max(...r.quotes.map((q) => q.foundCount));
-    expect(r.bestSingle!.foundCount).toBe(maxCov);
+    // o melhor mercado e o de menor total COMPARAVEL (item faltante imputado)
+    const minComparable = Math.min(...r.quotes.map((q) => q.comparableTotal));
+    expect(r.bestSingle!.comparableTotal).toBe(minComparable);
     // totais coerentes
     for (const q of r.quotes) {
       const soma = q.lines.reduce((a, l) => a + l.lineTotal, 0);
       expect(q.subtotal).toBe(soma);
       expect(q.total).toBe(q.subtotal + q.deliveryFee);
+      expect(q.comparableTotal).toBe(q.subtotal + q.imputedCost + q.deliveryFee);
       expect(Number.isInteger(q.total)).toBe(true);
+      expect(Number.isInteger(q.comparableTotal)).toBe(true);
     }
     expect(r.split).not.toBeNull();
-    expect(r.savingsFromSplit).toBe(r.bestSingle!.total - r.split!.total);
+    expect(r.savingsFromSplit).toBe(r.bestSingle!.comparableTotal - r.split!.total);
 
-    console.log('\n  melhor mercado:', r.bestSingle!.market.name, formatBRL(r.bestSingle!.total),
-      `(${r.bestSingle!.foundCount}/${list.length} itens)`);
+    console.log('\n  melhor mercado:', r.bestSingle!.market.name,
+      formatBRL(r.bestSingle!.total), '+', formatBRL(r.bestSingle!.imputedCost), 'fora =',
+      formatBRL(r.bestSingle!.comparableTotal), `(${r.bestSingle!.foundCount}/${list.length} itens)`);
     console.log('  spread entre mercados:', formatBRL(r.spread));
     console.log('  plano dividido:', r.split!.stops.map((s) => s.market.name).join(' + '),
       formatBRL(r.split!.total), '| economia:', formatBRL(r.savingsFromSplit));
     r.quotes.slice(0, 8).forEach((q) =>
-      console.log(`   ${q.market.name.padEnd(20)} ${formatBRL(q.total).padStart(11)}  ${q.foundCount}/${list.length}${q.meetsMinOrder ? '' : '  [abaixo do minimo]'}`));
+      console.log(`   ${q.market.name.padEnd(20)} ${formatBRL(q.comparableTotal).padStart(11)} comparavel  (gasta ${formatBRL(q.total).padStart(10)})  ${q.foundCount}/${list.length}${q.meetsMinOrder ? '' : '  [abaixo do minimo]'}`));
   });
 });

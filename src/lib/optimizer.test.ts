@@ -143,22 +143,67 @@ describe('cobertura vs. preço', () => {
     { productId: 'p2', quantity: 1 },
   ];
 
-  it('mercado com cobertura parcial não vira bestSingle mesmo sendo mais barato', () => {
+  it('imputa o item faltante para tornar as cestas comparáveis', () => {
     const result = compare(catalog, list, opts());
 
     const parcial = result.quotes.find((q) => q.market.id === 'barato');
+    // O que se gasta NESTE mercado continua sendo 1000: `total` não mente.
     expect(parcial?.total).toBe(1000);
     expect(parcial?.coverage).toBe(0.5);
     expect(parcial?.missingProductIds).toEqual(['p2']);
     expect(parcial?.lines.find((l) => l.productId === 'p2')?.offer).toBeNull();
     expect(parcial?.lines.find((l) => l.productId === 'p2')?.lineTotal).toBe(0);
+    // p2 falta aqui e custa 1500 no mais barato que o tem: 1000 + 1500.
+    expect(parcial?.imputedCost).toBe(1500);
+    expect(parcial?.comparableTotal).toBe(2500);
 
-    expect(result.quotes[0].market.id).toBe('completo');
-    expect(result.bestSingle?.market.id).toBe('completo');
-    expect(result.bestSingle?.total).toBe(2700);
+    const completo = result.quotes.find((q) => q.market.id === 'completo');
+    expect(completo?.imputedCost).toBe(0);
+    expect(completo?.comparableTotal).toBe(2700);
+
+    // 2500 < 2700: comprar p1 no barato e p2 em outro lugar sai melhor do que
+    // resolver tudo no completo. Ordenar por cobertura elegeria o completo e
+    // mandaria o usuário pagar 200 a mais sem motivo.
+    expect(result.quotes[0].market.id).toBe('barato');
+    expect(result.bestSingle?.market.id).toBe('barato');
   });
 
-  it('spread ignora mercados de cobertura menor', () => {
+  it('não premia cobertura parcial quando o item que falta é caro fora dali', () => {
+    const parcialCaro = mkCatalog(
+      [mkMarket('barato'), mkMarket('completo')],
+      [mkProduct('p1'), mkProduct('p2')],
+      [
+        { id: 'barato-p1', marketId: 'barato', productId: 'p1', price: 1000 },
+        { id: 'completo-p1', marketId: 'completo', productId: 'p1', price: 1200 },
+        { id: 'completo-p2', marketId: 'completo', productId: 'p2', price: 9000 },
+      ],
+    );
+    const result = compare(parcialCaro, list, opts());
+
+    // barato: 1000 + 9000 imputado = 10000; completo: 10200. Ainda ganha o
+    // barato, e por uma margem que corresponde à economia real (200).
+    expect(result.bestSingle?.market.id).toBe('barato');
+    expect(result.bestSingle?.comparableTotal).toBe(10000);
+    expect(result.quotes[1].comparableTotal).toBe(10200);
+  });
+
+  it('marca como não-precificável o item que não existe em lugar nenhum', () => {
+    const comFantasma = mkCatalog(
+      [mkMarket('a')],
+      [mkProduct('p1'), mkProduct('p2')],
+      [{ id: 'a-p1', marketId: 'a', productId: 'p1', price: 1000 }],
+    );
+    const result = compare(comFantasma, list, opts());
+
+    const quote = result.quotes[0];
+    expect(quote.missingProductIds).toEqual(['p2']);
+    expect(quote.unpricedProductIds).toEqual(['p2']);
+    // Sem preço em lugar nenhum não há o que imputar — não inventamos custo.
+    expect(quote.imputedCost).toBe(0);
+    expect(quote.comparableTotal).toBe(1000);
+  });
+
+  it('spread cobre todos os mercados, agora que os totais são comparáveis', () => {
     const comSegundoCompleto = mkCatalog(
       [mkMarket('barato'), mkMarket('completo'), mkMarket('completo2')],
       [mkProduct('p1'), mkProduct('p2')],
@@ -171,8 +216,8 @@ describe('cobertura vs. preço', () => {
       ],
     );
 
-    // 3000 (completo2) - 2700 (completo); o mercado parcial de 1000 não conta.
-    expect(compare(comSegundoCompleto, list, opts()).spread).toBe(300);
+    // 3000 (completo2) - 2500 (barato, já com p2 imputado a 1500).
+    expect(compare(comSegundoCompleto, list, opts()).spread).toBe(500);
   });
 });
 

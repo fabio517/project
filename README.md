@@ -90,10 +90,14 @@ uma normalização desatualizada, e existe uma só fonte de verdade para o cálc
 que decide o que é "melhor custo-benefício". O validador rejeita um JSON que
 traga `unitPrice`.
 
-**Cobertura vence preço na hora de eleger o melhor mercado.** Um mercado que só
-tem metade da sua lista soma um total baixinho e pareceria o vencedor. O
-otimizador ordena por cobertura primeiro e preço depois, e mostra explicitamente
-o que está faltando em cada lugar.
+**O item que falta é precificado, não ignorado.** Um mercado que só tem metade
+da sua lista soma um total baixinho e pareceria o vencedor. Mas ordenar por
+cobertura para corrigir isso erra para o outro lado: manda você pagar R$ 136 a
+mais para levar *um* item a mais. A saída é imputar — o item ausente entra na
+conta pelo menor preço onde ele existe, porque você vai comprá-lo em algum
+lugar de qualquer forma. Aí toda cesta cobre a mesma lista e os totais voltam a
+significar a mesma coisa. Cada mercado mostra os dois números: o que você gasta
+lá (`total`) e o custo comparável da lista inteira (`comparableTotal`).
 
 ## Limites conhecidos
 

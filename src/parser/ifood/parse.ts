@@ -202,12 +202,17 @@ export function parseCatalogItem(
   const price = firstPositiveCents([item.unitPrice, item.price, item.promotionalPrice]);
   if (price === null) return null;
 
-  const pack = readPackage(item, rawName);
+  let pack = readPackage(item, rawName);
   if (!pack) return null;
 
   // O esquema exige packageUnit === product.defaultUnit; sem isso a oferta não
-  // é comparável e o snapshot seria rejeitado pelo árbitro.
-  if (pack.unit !== product.defaultUnit) return null;
+  // é comparável e o snapshot seria rejeitado pelo árbitro. A única conversão
+  // segura é pack -> unidades ("Cerveja lata 350ml 12 un" comparada em `un`):
+  // o resto (volume <-> peso) exigiria densidade e vira descarte.
+  if (pack.unit !== product.defaultUnit) {
+    if (product.defaultUnit === 'un' && pack.count > 1) pack = { size: pack.count, unit: 'un', count: 1 };
+    else return null;
+  }
 
   const packageSize = round6(pack.size * (pack.count > 0 ? pack.count : 1));
   if (!(packageSize > 0)) return null;
@@ -311,7 +316,7 @@ export const DEFAULT_PRODUCTS: Product[] = [
   { id: 'oleo-soja', name: 'Óleo de soja', category: 'Mercearia', defaultUnit: 'L', keywords: ['oleo', 'soja'] },
   { id: 'leite-integral', name: 'Leite integral', category: 'Laticínios', defaultUnit: 'L', keywords: ['leite'] },
   { id: 'ovos-brancos', name: 'Ovos brancos', category: 'Ovos', defaultUnit: 'un', keywords: ['ovos'] },
-  { id: 'refrigerante-cola', name: 'Refrigerante de cola', category: 'Bebidas', defaultUnit: 'L', keywords: ['refrigerante'] },
+  { id: 'refrigerante', name: 'Refrigerante', category: 'Bebidas', defaultUnit: 'L', keywords: ['refrigerante'] },
   { id: 'agua-mineral', name: 'Água mineral', category: 'Bebidas', defaultUnit: 'L', keywords: ['agua', 'mineral'] },
   { id: 'sabao-po', name: 'Sabão em pó', category: 'Limpeza', defaultUnit: 'kg', keywords: ['sabao', 'po'] },
   { id: 'detergente', name: 'Detergente líquido', category: 'Limpeza', defaultUnit: 'L', keywords: ['detergente'] },

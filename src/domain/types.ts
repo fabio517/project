@@ -151,8 +151,22 @@ export interface MarketQuote {
   missingProductIds: string[];
   subtotal: Centavos;
   deliveryFee: Centavos;
-  /** subtotal + deliveryFee (se `includeDelivery`). */
+  /** subtotal + deliveryFee (se `includeDelivery`). Cobre só o que existe aqui. */
   total: Centavos;
+  /**
+   * Custo dos itens que faltam neste mercado, precificados pelo menor preço
+   * onde eles existem. Um item ausente não é de graça — você vai comprá-lo em
+   * outro lugar.
+   */
+  imputedCost: Centavos;
+  /**
+   * subtotal + imputedCost + deliveryFee. É o número que PODE ser comparado
+   * entre mercados, porque toda cesta passa a cobrir a mesma lista.
+   * O ranking usa este campo; `total` é o que você gasta neste mercado.
+   */
+  comparableTotal: Centavos;
+  /** Itens que não existem em mercado nenhum — impossível imputar preço. */
+  unpricedProductIds: string[];
   meetsMinOrder: boolean;
   /** Quanto falta para bater o pedido mínimo. 0 se já bate. */
   shortfallToMinOrder: Centavos;
