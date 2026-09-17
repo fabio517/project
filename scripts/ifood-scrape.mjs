@@ -71,7 +71,26 @@ function fail(message) {
   process.exit(1);
 }
 
-function parseCli(argv) {
+// `parseArgs` recusa "--lat -23.55" ("argument is ambiguous"), e latitude no
+// Brasil é sempre negativa: colamos o valor na opção antes de parsear.
+const NUMERIC_OPTIONS = new Set(['--lat', '--lng', '--limit', '--delay']);
+function foldNegativeNumbers(argv) {
+  const folded = [];
+  for (let i = 0; i < argv.length; i += 1) {
+    const arg = argv[i];
+    const next = argv[i + 1];
+    if (NUMERIC_OPTIONS.has(arg) && next !== undefined && /^-\d/.test(next)) {
+      folded.push(`${arg}=${next}`);
+      i += 1;
+    } else {
+      folded.push(arg);
+    }
+  }
+  return folded;
+}
+
+function parseCli(rawArgv) {
+  const argv = foldNegativeNumbers(rawArgv);
   let parsed;
   try {
     parsed = parseArgs({
