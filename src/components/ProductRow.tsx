@@ -57,18 +57,23 @@ export function ProductRow({ product, offers, quantity, scale, onChange }: Produ
           ) : null}
         </p>
         {best ? (
-          <p className="tabular mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs" style={{ color: 'var(--text-secondary)' }}>
-            <span className="font-medium" style={{ color: 'var(--text-primary)' }}>
-              {formatUnitPrice(best.unitPrice, best.unitKind)}
-            </span>
-            <span className="inline-flex items-center gap-1">
-              <MarketSwatch market={best.market} scale={scale} />
-              {best.market.name}
-            </span>
-            <span style={{ color: 'var(--text-muted)' }}>
-              · {formatBRL(best.price)} a embalagem · {pluralize(marketCount, 'mercado tem', 'mercados têm')}
-            </span>
-          </p>
+          <>
+            <p
+              className="tabular mt-1 flex flex-wrap items-center gap-x-2 text-xs"
+              style={{ color: 'var(--text-secondary)' }}
+            >
+              <span className="font-medium" style={{ color: 'var(--text-primary)' }}>
+                {formatUnitPrice(best.unitPrice, best.unitKind)}
+              </span>
+              <span className="inline-flex min-w-0 items-center gap-1">
+                <MarketSwatch market={best.market} scale={scale} />
+                <span className="truncate">{best.market.name}</span>
+              </span>
+            </p>
+            <p className="tabular text-xs" style={{ color: 'var(--text-muted)' }}>
+              {formatBRL(best.price)} a embalagem · {pluralize(marketCount, 'mercado tem', 'mercados têm')}
+            </p>
+          </>
         ) : (
           <p className="mt-1 text-xs" style={{ color: 'var(--text-muted)' }}>
             Sem oferta neste snapshot.

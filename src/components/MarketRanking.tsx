@@ -83,7 +83,7 @@ export function MarketRanking({ quotes, scale, totalItems, productName }: Market
                     </span>
                   ) : null}
                 </div>
-                <div className="text-right">
+                <div className="ml-auto text-right">
                   <span className="tabular text-sm font-bold">{formatBRL(quote.comparableTotal)}</span>
                   <span className="ml-1 text-xs" style={{ color: 'var(--text-muted)' }}>
                     comparável

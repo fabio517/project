@@ -19,11 +19,14 @@ body {
   overflow-x: hidden;
 }
 
-/* Foco sempre visível, inclusive sobre superfícies escuras. */
+/* Foco sempre visível: o anel usa a tinta primária (preto no claro, branco no
+   escuro), então ele contrasta sobre qualquer superfície ou botão colorido. */
 :where(a, button, input, select, textarea, [tabindex]):focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--text-primary);
   outline-offset: 2px;
   border-radius: var(--radius-sm);
+  /* Sem transição: o anel tem que aparecer na hora, não desbotar por 150ms. */
+  transition-property: none;
 }
 
 /* Números de dinheiro alinhados em tabela e ranking. */

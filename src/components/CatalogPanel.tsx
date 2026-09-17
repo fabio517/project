@@ -84,7 +84,9 @@ export function CatalogPanel({ catalog, list, scale }: CatalogPanelProps) {
         snapshot
       </p>
 
-      <div className="mt-3 space-y-5 lg:max-h-[calc(100vh-17rem)] lg:overflow-y-auto lg:pr-1 scroll-soft">
+      {/* Altura limitada nos dois tamanhos: no celular, 40 produtos empurrariam o
+          resultado da comparação para bem longe do polegar. */}
+      <div className="scroll-soft mt-3 max-h-[32rem] space-y-5 overflow-y-auto pr-1 lg:max-h-[calc(100vh-17rem)]">
         {groups.length === 0 ? (
           <p className="py-6 text-center text-sm" style={{ color: 'var(--text-muted)' }}>
             Nada encontrado para “{query}”.
