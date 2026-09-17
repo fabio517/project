@@ -1,0 +1,3691 @@
+{
+  "capturedAt": "2026-09-17T12:00:00.000Z",
+  "source": "seed",
+  "location": {
+    "label": "São Paulo, SP — Vila Mariana",
+    "latitude": -23.5893,
+    "longitude": -46.6349
+  },
+  "markets": [
+    {
+      "id": "assai",
+      "name": "Assaí Atacadista",
+      "slug": "assai-atacadista",
+      "deliveryFee": 1290,
+      "minOrder": 12000,
+      "deliveryMinutes": [
+        75,
+        100
+      ],
+      "distanceKm": 6.4,
+      "rating": 4.3
+    },
+    {
+      "id": "atacadao",
+      "name": "Atacadão",
+      "slug": "atacadao",
+      "deliveryFee": 1490,
+      "minOrder": 15000,
+      "deliveryMinutes": [
+        80,
+        110
+      ],
+      "distanceKm": 8.9,
+      "rating": 4.2
+    },
+    {
+      "id": "sams",
+      "name": "Sam's Club",
+      "slug": "sams-club",
+      "deliveryFee": 990,
+      "minOrder": 10000,
+      "deliveryMinutes": [
+        70,
+        95
+      ],
+      "distanceKm": 11.2,
+      "rating": 4.5
+    },
+    {
+      "id": "dia",
+      "name": "Dia Supermercado",
+      "slug": "dia-supermercado",
+      "deliveryFee": 699,
+      "minOrder": 3000,
+      "deliveryMinutes": [
+        35,
+        50
+      ],
+      "distanceKm": 1.2,
+      "rating": 4.1
+    },
+    {
+      "id": "carrefour",
+      "name": "Carrefour",
+      "slug": "carrefour",
+      "deliveryFee": 799,
+      "minOrder": 5000,
+      "deliveryMinutes": [
+        45,
+        65
+      ],
+      "distanceKm": 3.1,
+      "rating": 4.6
+    },
+    {
+      "id": "extra",
+      "name": "Extra Mercado",
+      "slug": "extra-mercado",
+      "deliveryFee": 0,
+      "minOrder": 8000,
+      "deliveryMinutes": [
+        50,
+        70
+      ],
+      "distanceKm": 2.7,
+      "rating": 4.4
+    },
+    {
+      "id": "pao",
+      "name": "Pão de Açúcar",
+      "slug": "pao-de-acucar",
+      "deliveryFee": 590,
+      "minOrder": 4000,
+      "deliveryMinutes": [
+        30,
+        45
+      ],
+      "distanceKm": 0.9,
+      "rating": 4.8
+    },
+    {
+      "id": "marche",
+      "name": "St Marche",
+      "slug": "st-marche",
+      "deliveryFee": 890,
+      "minOrder": 6000,
+      "deliveryMinutes": [
+        30,
+        40
+      ],
+      "distanceKm": 1.8,
+      "rating": 4.9
+    }
+  ],
+  "products": [
+    {
+      "id": "arroz-branco",
+      "name": "Arroz branco tipo 1",
+      "category": "Mercearia",
+      "defaultUnit": "kg",
+      "keywords": [
+        "arroz"
+      ]
+    },
+    {
+      "id": "feijao-carioca",
+      "name": "Feijão carioca",
+      "category": "Mercearia",
+      "defaultUnit": "kg",
+      "keywords": [
+        "feijao",
+        "carioca"
+      ]
+    },
+    {
+      "id": "macarrao-espag",
+      "name": "Macarrão espaguete",
+      "category": "Mercearia",
+      "defaultUnit": "kg",
+      "keywords": [
+        "macarrao",
+        "espaguete"
+      ]
+    },
+    {
+      "id": "acucar-refinado",
+      "name": "Açúcar refinado",
+      "category": "Mercearia",
+      "defaultUnit": "kg",
+      "keywords": [
+        "acucar"
+      ]
+    },
+    {
+      "id": "cafe-moido",
+      "name": "Café torrado e moído",
+      "category": "Mercearia",
+      "defaultUnit": "kg",
+      "keywords": [
+        "cafe"
+      ]
+    },
+    {
+      "id": "oleo-soja",
+      "name": "Óleo de soja",
+      "category": "Mercearia",
+      "defaultUnit": "L",
+      "keywords": [
+        "oleo",
+        "soja"
+      ]
+    },
+    {
+      "id": "farinha-trigo",
+      "name": "Farinha de trigo",
+      "category": "Mercearia",
+      "defaultUnit": "kg",
+      "keywords": [
+        "farinha",
+        "trigo"
+      ]
+    },
+    {
+      "id": "sal-refinado",
+      "name": "Sal refinado iodado",
+      "category": "Mercearia",
+      "defaultUnit": "kg",
+      "keywords": [
+        "sal"
+      ]
+    },
+    {
+      "id": "molho-tomate",
+      "name": "Molho de tomate",
+      "category": "Mercearia",
+      "defaultUnit": "kg",
+      "keywords": [
+        "molho",
+        "tomate"
+      ]
+    },
+    {
+      "id": "biscoito-agua",
+      "name": "Biscoito água e sal",
+      "category": "Mercearia",
+      "defaultUnit": "kg",
+      "keywords": [
+        "biscoito",
+        "agua",
+        "sal"
+      ]
+    },
+    {
+      "id": "leite-integral",
+      "name": "Leite integral",
+      "category": "Laticínios",
+      "defaultUnit": "L",
+      "keywords": [
+        "leite",
+        "integral"
+      ]
+    },
+    {
+      "id": "queijo-mussarela",
+      "name": "Queijo mussarela fatiado",
+      "category": "Laticínios",
+      "defaultUnit": "kg",
+      "keywords": [
+        "queijo",
+        "mussarela"
+      ]
+    },
+    {
+      "id": "manteiga",
+      "name": "Manteiga com sal",
+      "category": "Laticínios",
+      "defaultUnit": "kg",
+      "keywords": [
+        "manteiga"
+      ]
+    },
+    {
+      "id": "iogurte-natural",
+      "name": "Iogurte natural",
+      "category": "Laticínios",
+      "defaultUnit": "kg",
+      "keywords": [
+        "iogurte",
+        "natural"
+      ]
+    },
+    {
+      "id": "requeijao",
+      "name": "Requeijão cremoso",
+      "category": "Laticínios",
+      "defaultUnit": "kg",
+      "keywords": [
+        "requeijao"
+      ]
+    },
+    {
+      "id": "banana-prata",
+      "name": "Banana prata",
+      "category": "Hortifruti",
+      "defaultUnit": "kg",
+      "keywords": [
+        "banana"
+      ]
+    },
+    {
+      "id": "tomate",
+      "name": "Tomate",
+      "category": "Hortifruti",
+      "defaultUnit": "kg",
+      "keywords": [
+        "tomate"
+      ]
+    },
+    {
+      "id": "batata",
+      "name": "Batata lavada",
+      "category": "Hortifruti",
+      "defaultUnit": "kg",
+      "keywords": [
+        "batata"
+      ]
+    },
+    {
+      "id": "cebola",
+      "name": "Cebola",
+      "category": "Hortifruti",
+      "defaultUnit": "kg",
+      "keywords": [
+        "cebola"
+      ]
+    },
+    {
+      "id": "alface-crespa",
+      "name": "Alface crespa",
+      "category": "Hortifruti",
+      "defaultUnit": "un",
+      "keywords": [
+        "alface"
+      ]
+    },
+    {
+      "id": "maca-fuji",
+      "name": "Maçã Fuji",
+      "category": "Hortifruti",
+      "defaultUnit": "kg",
+      "keywords": [
+        "maca",
+        "fuji"
+      ]
+    },
+    {
+      "id": "peito-frango",
+      "name": "Peito de frango",
+      "category": "Carnes",
+      "defaultUnit": "kg",
+      "keywords": [
+        "peito",
+        "frango"
+      ]
+    },
+    {
+      "id": "patinho",
+      "name": "Patinho bovino",
+      "category": "Carnes",
+      "defaultUnit": "kg",
+      "keywords": [
+        "patinho"
+      ]
+    },
+    {
+      "id": "linguica-cal",
+      "name": "Linguiça calabresa",
+      "category": "Carnes",
+      "defaultUnit": "kg",
+      "keywords": [
+        "linguica",
+        "calabresa"
+      ]
+    },
+    {
+      "id": "ovos",
+      "name": "Ovos brancos",
+      "category": "Carnes",
+      "defaultUnit": "un",
+      "keywords": [
+        "ovos"
+      ]
+    },
+    {
+      "id": "refri-cola",
+      "name": "Refrigerante de cola",
+      "category": "Bebidas",
+      "defaultUnit": "L",
+      "keywords": [
+        "refrigerante",
+        "cola"
+      ]
+    },
+    {
+      "id": "suco-uva",
+      "name": "Suco de uva integral",
+      "category": "Bebidas",
+      "defaultUnit": "L",
+      "keywords": [
+        "suco",
+        "uva"
+      ]
+    },
+    {
+      "id": "cerveja-lata",
+      "name": "Cerveja lata 350ml",
+      "category": "Bebidas",
+      "defaultUnit": "un",
+      "keywords": [
+        "cerveja"
+      ]
+    },
+    {
+      "id": "agua-mineral",
+      "name": "Água mineral sem gás",
+      "category": "Bebidas",
+      "defaultUnit": "L",
+      "keywords": [
+        "agua",
+        "mineral"
+      ]
+    },
+    {
+      "id": "cha-mate",
+      "name": "Chá mate natural",
+      "category": "Bebidas",
+      "defaultUnit": "L",
+      "keywords": [
+        "cha",
+        "mate"
+      ]
+    },
+    {
+      "id": "detergente",
+      "name": "Detergente neutro",
+      "category": "Limpeza",
+      "defaultUnit": "L",
+      "keywords": [
+        "detergente"
+      ]
+    },
+    {
+      "id": "sabao-po",
+      "name": "Sabão em pó",
+      "category": "Limpeza",
+      "defaultUnit": "kg",
+      "keywords": [
+        "sabao",
+        "po"
+      ]
+    },
+    {
+      "id": "amaciante",
+      "name": "Amaciante de roupas",
+      "category": "Limpeza",
+      "defaultUnit": "L",
+      "keywords": [
+        "amaciante"
+      ]
+    },
+    {
+      "id": "desinfetante",
+      "name": "Desinfetante",
+      "category": "Limpeza",
+      "defaultUnit": "L",
+      "keywords": [
+        "desinfetante"
+      ]
+    },
+    {
+      "id": "papel-higienico",
+      "name": "Papel higiênico folha dupla",
+      "category": "Limpeza",
+      "defaultUnit": "un",
+      "keywords": [
+        "papel",
+        "higienico"
+      ]
+    },
+    {
+      "id": "sabonete",
+      "name": "Sabonete em barra",
+      "category": "Higiene",
+      "defaultUnit": "un",
+      "keywords": [
+        "sabonete"
+      ]
+    },
+    {
+      "id": "shampoo",
+      "name": "Shampoo",
+      "category": "Higiene",
+      "defaultUnit": "L",
+      "keywords": [
+        "shampoo"
+      ]
+    },
+    {
+      "id": "creme-dental",
+      "name": "Creme dental",
+      "category": "Higiene",
+      "defaultUnit": "un",
+      "keywords": [
+        "creme",
+        "dental"
+      ]
+    },
+    {
+      "id": "papel-toalha",
+      "name": "Papel toalha",
+      "category": "Higiene",
+      "defaultUnit": "un",
+      "keywords": [
+        "papel",
+        "toalha"
+      ]
+    },
+    {
+      "id": "absorvente",
+      "name": "Absorvente com abas",
+      "category": "Higiene",
+      "defaultUnit": "un",
+      "keywords": [
+        "absorvente"
+      ]
+    }
+  ],
+  "offers": [
+    {
+      "id": "assai-arroz-branco",
+      "marketId": "assai",
+      "productId": "arroz-branco",
+      "rawName": "Arroz branco tipo 1 Namorado 2kg",
+      "brand": "Namorado",
+      "price": 853,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-arroz-branco",
+      "marketId": "atacadao",
+      "productId": "arroz-branco",
+      "rawName": "Arroz branco tipo 1 Namorado 5kg",
+      "brand": "Namorado",
+      "price": 1787,
+      "originalPrice": 2262,
+      "packageSize": 5,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "21% OFF"
+    },
+    {
+      "id": "sams-arroz-branco",
+      "marketId": "sams",
+      "productId": "arroz-branco",
+      "rawName": "Arroz branco tipo 1 Tio João 5kg",
+      "brand": "Tio João",
+      "price": 2398,
+      "packageSize": 5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "dia-arroz-branco",
+      "marketId": "dia",
+      "productId": "arroz-branco",
+      "rawName": "Arroz branco tipo 1 Camil 1kg",
+      "brand": "Camil",
+      "price": 533,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-arroz-branco",
+      "marketId": "carrefour",
+      "productId": "arroz-branco",
+      "rawName": "Arroz branco tipo 1 Prato Fino 5kg",
+      "brand": "Prato Fino",
+      "price": 2824,
+      "packageSize": 5,
+      "packageUnit": "kg",
+      "available": false
+    },
+    {
+      "id": "extra-arroz-branco",
+      "marketId": "extra",
+      "productId": "arroz-branco",
+      "rawName": "Arroz branco tipo 1 Camil 2kg",
+      "brand": "Camil",
+      "price": 1000,
+      "originalPrice": 1275,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "22% OFF"
+    },
+    {
+      "id": "pao-arroz-branco",
+      "marketId": "pao",
+      "productId": "arroz-branco",
+      "rawName": "Arroz branco tipo 1 Namorado 1kg",
+      "brand": "Namorado",
+      "price": 585,
+      "originalPrice": 706,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "17% OFF"
+    },
+    {
+      "id": "marche-arroz-branco",
+      "marketId": "marche",
+      "productId": "arroz-branco",
+      "rawName": "Arroz branco tipo 1 Prato Fino 2kg",
+      "brand": "Prato Fino",
+      "price": 1273,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-feijao-carioca",
+      "marketId": "assai",
+      "productId": "feijao-carioca",
+      "rawName": "Feijão carioca Camil 2kg",
+      "brand": "Camil",
+      "price": 1353,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-feijao-carioca",
+      "marketId": "atacadao",
+      "productId": "feijao-carioca",
+      "rawName": "Feijão carioca Broto Legal 2kg",
+      "brand": "Broto Legal",
+      "price": 1417,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-feijao-carioca",
+      "marketId": "sams",
+      "productId": "feijao-carioca",
+      "rawName": "Feijão carioca Camil 2kg",
+      "brand": "Camil",
+      "price": 1556,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-feijao-carioca",
+      "marketId": "carrefour",
+      "productId": "feijao-carioca",
+      "rawName": "Feijão carioca Broto Legal 1kg",
+      "brand": "Broto Legal",
+      "price": 847,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-feijao-carioca",
+      "marketId": "extra",
+      "productId": "feijao-carioca",
+      "rawName": "Feijão carioca Camil 1kg",
+      "brand": "Camil",
+      "price": 875,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-macarrao-espag",
+      "marketId": "assai",
+      "productId": "macarrao-espag",
+      "rawName": "Macarrão espaguete Galo 1kg",
+      "brand": "Galo",
+      "price": 748,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-macarrao-espag",
+      "marketId": "atacadao",
+      "productId": "macarrao-espag",
+      "rawName": "Macarrão espaguete Adria 500g",
+      "brand": "Adria",
+      "price": 359,
+      "packageSize": 0.5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-macarrao-espag",
+      "marketId": "sams",
+      "productId": "macarrao-espag",
+      "rawName": "Macarrão espaguete Renata 1kg",
+      "brand": "Renata",
+      "price": 749,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "dia-macarrao-espag",
+      "marketId": "dia",
+      "productId": "macarrao-espag",
+      "rawName": "Macarrão espaguete Galo 500g",
+      "brand": "Galo",
+      "price": 404,
+      "packageSize": 0.5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-macarrao-espag",
+      "marketId": "carrefour",
+      "productId": "macarrao-espag",
+      "rawName": "Macarrão espaguete Adria 1kg",
+      "brand": "Adria",
+      "price": 838,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-macarrao-espag",
+      "marketId": "extra",
+      "productId": "macarrao-espag",
+      "rawName": "Macarrão espaguete Adria 500g",
+      "brand": "Adria",
+      "price": 374,
+      "originalPrice": 438,
+      "packageSize": 0.5,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "15% OFF"
+    },
+    {
+      "id": "pao-macarrao-espag",
+      "marketId": "pao",
+      "productId": "macarrao-espag",
+      "rawName": "Macarrão espaguete Galo 1kg",
+      "brand": "Galo",
+      "price": 1089,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-acucar-refinado",
+      "marketId": "assai",
+      "productId": "acucar-refinado",
+      "rawName": "Açúcar refinado Caravelas 2kg",
+      "brand": "Caravelas",
+      "price": 962,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-acucar-refinado",
+      "marketId": "atacadao",
+      "productId": "acucar-refinado",
+      "rawName": "Açúcar refinado Guarani 2kg",
+      "brand": "Guarani",
+      "price": 681,
+      "originalPrice": 832,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "18% OFF"
+    },
+    {
+      "id": "sams-acucar-refinado",
+      "marketId": "sams",
+      "productId": "acucar-refinado",
+      "rawName": "Açúcar refinado União 5kg",
+      "brand": "União",
+      "price": 2254,
+      "packageSize": 5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "dia-acucar-refinado",
+      "marketId": "dia",
+      "productId": "acucar-refinado",
+      "rawName": "Açúcar refinado Caravelas 5kg",
+      "brand": "Caravelas",
+      "price": 2206,
+      "packageSize": 5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-acucar-refinado",
+      "marketId": "carrefour",
+      "productId": "acucar-refinado",
+      "rawName": "Açúcar refinado União 1kg",
+      "brand": "União",
+      "price": 533,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-acucar-refinado",
+      "marketId": "extra",
+      "productId": "acucar-refinado",
+      "rawName": "Açúcar refinado União 2kg",
+      "brand": "União",
+      "price": 1086,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-acucar-refinado",
+      "marketId": "pao",
+      "productId": "acucar-refinado",
+      "rawName": "Açúcar refinado União 1kg",
+      "brand": "União",
+      "price": 597,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-acucar-refinado",
+      "marketId": "marche",
+      "productId": "acucar-refinado",
+      "rawName": "Açúcar refinado Caravelas 2kg",
+      "brand": "Caravelas",
+      "price": 1255,
+      "originalPrice": 1444,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "13% OFF"
+    },
+    {
+      "id": "atacadao-cafe-moido",
+      "marketId": "atacadao",
+      "productId": "cafe-moido",
+      "rawName": "Café torrado e moído 3 Corações 500g",
+      "brand": "3 Corações",
+      "price": 1928,
+      "packageSize": 0.5,
+      "packageUnit": "kg",
+      "available": false
+    },
+    {
+      "id": "carrefour-cafe-moido",
+      "marketId": "carrefour",
+      "productId": "cafe-moido",
+      "rawName": "Café torrado e moído Melitta 1kg",
+      "brand": "Melitta",
+      "price": 4233,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-cafe-moido",
+      "marketId": "extra",
+      "productId": "cafe-moido",
+      "rawName": "Café torrado e moído 3 Corações 1kg",
+      "brand": "3 Corações",
+      "price": 4513,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-cafe-moido",
+      "marketId": "pao",
+      "productId": "cafe-moido",
+      "rawName": "Café torrado e moído Santa Clara 500g",
+      "brand": "Santa Clara",
+      "price": 2622,
+      "originalPrice": 3079,
+      "packageSize": 0.5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-cafe-moido",
+      "marketId": "marche",
+      "productId": "cafe-moido",
+      "rawName": "Café torrado e moído Melitta 1kg",
+      "brand": "Melitta",
+      "price": 4942,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-oleo-soja",
+      "marketId": "assai",
+      "productId": "oleo-soja",
+      "rawName": "Óleo de soja Liza 900ml",
+      "brand": "Liza",
+      "price": 658,
+      "packageSize": 0.9,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "atacadao-oleo-soja",
+      "marketId": "atacadao",
+      "productId": "oleo-soja",
+      "rawName": "Óleo de soja Soya 900ml",
+      "brand": "Soya",
+      "price": 648,
+      "packageSize": 0.9,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "dia-oleo-soja",
+      "marketId": "dia",
+      "productId": "oleo-soja",
+      "rawName": "Óleo de soja Concórdia 900ml",
+      "brand": "Concórdia",
+      "price": 723,
+      "packageSize": 0.9,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "carrefour-oleo-soja",
+      "marketId": "carrefour",
+      "productId": "oleo-soja",
+      "rawName": "Óleo de soja Soya 900ml",
+      "brand": "Soya",
+      "price": 675,
+      "packageSize": 0.9,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "extra-oleo-soja",
+      "marketId": "extra",
+      "productId": "oleo-soja",
+      "rawName": "Óleo de soja Soya 900ml",
+      "brand": "Soya",
+      "price": 815,
+      "packageSize": 0.9,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "pao-oleo-soja",
+      "marketId": "pao",
+      "productId": "oleo-soja",
+      "rawName": "Óleo de soja Soya 900ml",
+      "brand": "Soya",
+      "price": 985,
+      "packageSize": 0.9,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "marche-oleo-soja",
+      "marketId": "marche",
+      "productId": "oleo-soja",
+      "rawName": "Óleo de soja Soya 900ml",
+      "brand": "Soya",
+      "price": 918,
+      "packageSize": 0.9,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "assai-farinha-trigo",
+      "marketId": "assai",
+      "productId": "farinha-trigo",
+      "rawName": "Farinha de trigo Dona Benta 5kg",
+      "brand": "Dona Benta",
+      "price": 2195,
+      "packageSize": 5,
+      "packageUnit": "kg",
+      "available": false
+    },
+    {
+      "id": "atacadao-farinha-trigo",
+      "marketId": "atacadao",
+      "productId": "farinha-trigo",
+      "rawName": "Farinha de trigo Dona Benta 1kg",
+      "brand": "Dona Benta",
+      "price": 427,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-farinha-trigo",
+      "marketId": "sams",
+      "productId": "farinha-trigo",
+      "rawName": "Farinha de trigo Anaconda 5kg",
+      "brand": "Anaconda",
+      "price": 1929,
+      "originalPrice": 2320,
+      "packageSize": 5,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "17% OFF"
+    },
+    {
+      "id": "dia-farinha-trigo",
+      "marketId": "dia",
+      "productId": "farinha-trigo",
+      "rawName": "Farinha de trigo Anaconda 5kg",
+      "brand": "Anaconda",
+      "price": 2489,
+      "packageSize": 5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-farinha-trigo",
+      "marketId": "carrefour",
+      "productId": "farinha-trigo",
+      "rawName": "Farinha de trigo Dona Benta 5kg",
+      "brand": "Dona Benta",
+      "price": 3014,
+      "packageSize": 5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-farinha-trigo",
+      "marketId": "extra",
+      "productId": "farinha-trigo",
+      "rawName": "Farinha de trigo Dona Benta 5kg",
+      "brand": "Dona Benta",
+      "price": 3011,
+      "packageSize": 5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-farinha-trigo",
+      "marketId": "pao",
+      "productId": "farinha-trigo",
+      "rawName": "Farinha de trigo Renata 5kg",
+      "brand": "Renata",
+      "price": 3417,
+      "packageSize": 5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-farinha-trigo",
+      "marketId": "marche",
+      "productId": "farinha-trigo",
+      "rawName": "Farinha de trigo Anaconda 1kg",
+      "brand": "Anaconda",
+      "price": 698,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-sal-refinado",
+      "marketId": "assai",
+      "productId": "sal-refinado",
+      "rawName": "Sal refinado iodado Cisne 1kg",
+      "brand": "Cisne",
+      "price": 216,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": false
+    },
+    {
+      "id": "atacadao-sal-refinado",
+      "marketId": "atacadao",
+      "productId": "sal-refinado",
+      "rawName": "Sal refinado iodado Cisne 1kg",
+      "brand": "Cisne",
+      "price": 228,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-sal-refinado",
+      "marketId": "sams",
+      "productId": "sal-refinado",
+      "rawName": "Sal refinado iodado Diana 1kg",
+      "brand": "Diana",
+      "price": 170,
+      "originalPrice": 212,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "20% OFF"
+    },
+    {
+      "id": "dia-sal-refinado",
+      "marketId": "dia",
+      "productId": "sal-refinado",
+      "rawName": "Sal refinado iodado Cisne 1kg",
+      "brand": "Cisne",
+      "price": 267,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-sal-refinado",
+      "marketId": "extra",
+      "productId": "sal-refinado",
+      "rawName": "Sal refinado iodado Cisne 1kg",
+      "brand": "Cisne",
+      "price": 249,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-sal-refinado",
+      "marketId": "pao",
+      "productId": "sal-refinado",
+      "rawName": "Sal refinado iodado Diana 1kg",
+      "brand": "Diana",
+      "price": 342,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-sal-refinado",
+      "marketId": "marche",
+      "productId": "sal-refinado",
+      "rawName": "Sal refinado iodado Lebre 1kg",
+      "brand": "Lebre",
+      "price": 329,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-molho-tomate",
+      "marketId": "atacadao",
+      "productId": "molho-tomate",
+      "rawName": "Molho de tomate Quero 520g",
+      "brand": "Quero",
+      "price": 366,
+      "packageSize": 0.52,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-molho-tomate",
+      "marketId": "sams",
+      "productId": "molho-tomate",
+      "rawName": "Molho de tomate Pomarola 340g",
+      "brand": "Pomarola",
+      "price": 229,
+      "originalPrice": 273,
+      "packageSize": 0.34,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "16% OFF"
+    },
+    {
+      "id": "dia-molho-tomate",
+      "marketId": "dia",
+      "productId": "molho-tomate",
+      "rawName": "Molho de tomate Elefante 520g",
+      "brand": "Elefante",
+      "price": 445,
+      "packageSize": 0.52,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-molho-tomate",
+      "marketId": "carrefour",
+      "productId": "molho-tomate",
+      "rawName": "Molho de tomate Elefante 340g",
+      "brand": "Elefante",
+      "price": 265,
+      "originalPrice": 317,
+      "packageSize": 0.34,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-molho-tomate",
+      "marketId": "extra",
+      "productId": "molho-tomate",
+      "rawName": "Molho de tomate Quero 340g",
+      "brand": "Quero",
+      "price": 321,
+      "packageSize": 0.34,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-molho-tomate",
+      "marketId": "marche",
+      "productId": "molho-tomate",
+      "rawName": "Molho de tomate Heinz 340g",
+      "brand": "Heinz",
+      "price": 411,
+      "packageSize": 0.34,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-biscoito-agua",
+      "marketId": "assai",
+      "productId": "biscoito-agua",
+      "rawName": "Biscoito água e sal Piraquê 400g",
+      "brand": "Piraquê",
+      "price": 375,
+      "originalPrice": 471,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "20% OFF"
+    },
+    {
+      "id": "atacadao-biscoito-agua",
+      "marketId": "atacadao",
+      "productId": "biscoito-agua",
+      "rawName": "Biscoito água e sal Vitarella 400g",
+      "brand": "Vitarella",
+      "price": 444,
+      "originalPrice": 573,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-biscoito-agua",
+      "marketId": "sams",
+      "productId": "biscoito-agua",
+      "rawName": "Biscoito água e sal Marilan 400g",
+      "brand": "Marilan",
+      "price": 424,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "dia-biscoito-agua",
+      "marketId": "dia",
+      "productId": "biscoito-agua",
+      "rawName": "Biscoito água e sal Marilan 400g",
+      "brand": "Marilan",
+      "price": 443,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-biscoito-agua",
+      "marketId": "carrefour",
+      "productId": "biscoito-agua",
+      "rawName": "Biscoito água e sal Piraquê 400g",
+      "brand": "Piraquê",
+      "price": 475,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-biscoito-agua",
+      "marketId": "extra",
+      "productId": "biscoito-agua",
+      "rawName": "Biscoito água e sal Piraquê 400g",
+      "brand": "Piraquê",
+      "price": 601,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-biscoito-agua",
+      "marketId": "pao",
+      "productId": "biscoito-agua",
+      "rawName": "Biscoito água e sal Piraquê 400g",
+      "brand": "Piraquê",
+      "price": 560,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-leite-integral",
+      "marketId": "sams",
+      "productId": "leite-integral",
+      "rawName": "Leite integral Parmalat 1L",
+      "brand": "Parmalat",
+      "price": 508,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "dia-leite-integral",
+      "marketId": "dia",
+      "productId": "leite-integral",
+      "rawName": "Leite integral Italac 1L",
+      "brand": "Italac",
+      "price": 567,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "carrefour-leite-integral",
+      "marketId": "carrefour",
+      "productId": "leite-integral",
+      "rawName": "Leite integral Parmalat 1L",
+      "brand": "Parmalat",
+      "price": 522,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "extra-leite-integral",
+      "marketId": "extra",
+      "productId": "leite-integral",
+      "rawName": "Leite integral Piracanjuba 1L",
+      "brand": "Piracanjuba",
+      "price": 500,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "pao-leite-integral",
+      "marketId": "pao",
+      "productId": "leite-integral",
+      "rawName": "Leite integral Italac 1L",
+      "brand": "Italac",
+      "price": 580,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "marche-leite-integral",
+      "marketId": "marche",
+      "productId": "leite-integral",
+      "rawName": "Leite integral Elegê 1L",
+      "brand": "Elegê",
+      "price": 543,
+      "originalPrice": 663,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true,
+      "promo": "18% OFF"
+    },
+    {
+      "id": "assai-queijo-mussarela",
+      "marketId": "assai",
+      "productId": "queijo-mussarela",
+      "rawName": "Queijo mussarela fatiado President 150g",
+      "brand": "President",
+      "price": 648,
+      "packageSize": 0.15,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-queijo-mussarela",
+      "marketId": "atacadao",
+      "productId": "queijo-mussarela",
+      "rawName": "Queijo mussarela fatiado Tirolez 400g",
+      "brand": "Tirolez",
+      "price": 1555,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-queijo-mussarela",
+      "marketId": "sams",
+      "productId": "queijo-mussarela",
+      "rawName": "Queijo mussarela fatiado Tirolez 400g",
+      "brand": "Tirolez",
+      "price": 1739,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "dia-queijo-mussarela",
+      "marketId": "dia",
+      "productId": "queijo-mussarela",
+      "rawName": "Queijo mussarela fatiado Tirolez 150g",
+      "brand": "Tirolez",
+      "price": 673,
+      "originalPrice": 762,
+      "packageSize": 0.15,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-queijo-mussarela",
+      "marketId": "carrefour",
+      "productId": "queijo-mussarela",
+      "rawName": "Queijo mussarela fatiado President 150g",
+      "brand": "President",
+      "price": 718,
+      "packageSize": 0.15,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-queijo-mussarela",
+      "marketId": "extra",
+      "productId": "queijo-mussarela",
+      "rawName": "Queijo mussarela fatiado Tirolez 150g",
+      "brand": "Tirolez",
+      "price": 649,
+      "originalPrice": 765,
+      "packageSize": 0.15,
+      "packageUnit": "kg",
+      "available": false,
+      "promo": "15% OFF"
+    },
+    {
+      "id": "pao-queijo-mussarela",
+      "marketId": "pao",
+      "productId": "queijo-mussarela",
+      "rawName": "Queijo mussarela fatiado President 150g",
+      "brand": "President",
+      "price": 753,
+      "packageSize": 0.15,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-queijo-mussarela",
+      "marketId": "marche",
+      "productId": "queijo-mussarela",
+      "rawName": "Queijo mussarela fatiado President 400g",
+      "brand": "President",
+      "price": 2589,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-manteiga",
+      "marketId": "assai",
+      "productId": "manteiga",
+      "rawName": "Manteiga com sal Aviação 200g",
+      "brand": "Aviação",
+      "price": 1024,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-manteiga",
+      "marketId": "sams",
+      "productId": "manteiga",
+      "rawName": "Manteiga com sal Aviação 200g",
+      "brand": "Aviação",
+      "price": 1224,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "dia-manteiga",
+      "marketId": "dia",
+      "productId": "manteiga",
+      "rawName": "Manteiga com sal Itambé 200g",
+      "brand": "Itambé",
+      "price": 1323,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-manteiga",
+      "marketId": "carrefour",
+      "productId": "manteiga",
+      "rawName": "Manteiga com sal Aviação 200g",
+      "brand": "Aviação",
+      "price": 1191,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-manteiga",
+      "marketId": "extra",
+      "productId": "manteiga",
+      "rawName": "Manteiga com sal Aviação 200g",
+      "brand": "Aviação",
+      "price": 1168,
+      "originalPrice": 1475,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-manteiga",
+      "marketId": "pao",
+      "productId": "manteiga",
+      "rawName": "Manteiga com sal Aviação 200g",
+      "brand": "Aviação",
+      "price": 1453,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-manteiga",
+      "marketId": "marche",
+      "productId": "manteiga",
+      "rawName": "Manteiga com sal Itambé 200g",
+      "brand": "Itambé",
+      "price": 1424,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-iogurte-natural",
+      "marketId": "assai",
+      "productId": "iogurte-natural",
+      "rawName": "Iogurte natural Nestlé 170g",
+      "brand": "Nestlé",
+      "price": 195,
+      "packageSize": 0.17,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-iogurte-natural",
+      "marketId": "atacadao",
+      "productId": "iogurte-natural",
+      "rawName": "Iogurte natural Nestlé 500g",
+      "brand": "Nestlé",
+      "price": 629,
+      "packageSize": 0.5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-iogurte-natural",
+      "marketId": "sams",
+      "productId": "iogurte-natural",
+      "rawName": "Iogurte natural Danone 500g",
+      "brand": "Danone",
+      "price": 453,
+      "originalPrice": 536,
+      "packageSize": 0.5,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "16% OFF"
+    },
+    {
+      "id": "dia-iogurte-natural",
+      "marketId": "dia",
+      "productId": "iogurte-natural",
+      "rawName": "Iogurte natural Nestlé 500g",
+      "brand": "Nestlé",
+      "price": 578,
+      "packageSize": 0.5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-iogurte-natural",
+      "marketId": "carrefour",
+      "productId": "iogurte-natural",
+      "rawName": "Iogurte natural Danone 500g",
+      "brand": "Danone",
+      "price": 605,
+      "packageSize": 0.5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-iogurte-natural",
+      "marketId": "extra",
+      "productId": "iogurte-natural",
+      "rawName": "Iogurte natural Vigor 170g",
+      "brand": "Vigor",
+      "price": 241,
+      "packageSize": 0.17,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-iogurte-natural",
+      "marketId": "pao",
+      "productId": "iogurte-natural",
+      "rawName": "Iogurte natural Vigor 170g",
+      "brand": "Vigor",
+      "price": 295,
+      "packageSize": 0.17,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-iogurte-natural",
+      "marketId": "marche",
+      "productId": "iogurte-natural",
+      "rawName": "Iogurte natural Nestlé 170g",
+      "brand": "Nestlé",
+      "price": 266,
+      "originalPrice": 305,
+      "packageSize": 0.17,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "13% OFF"
+    },
+    {
+      "id": "assai-requeijao",
+      "marketId": "assai",
+      "productId": "requeijao",
+      "rawName": "Requeijão cremoso Catupiry 200g",
+      "brand": "Catupiry",
+      "price": 642,
+      "originalPrice": 805,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-requeijao",
+      "marketId": "atacadao",
+      "productId": "requeijao",
+      "rawName": "Requeijão cremoso Danubio 200g",
+      "brand": "Danubio",
+      "price": 610,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-requeijao",
+      "marketId": "sams",
+      "productId": "requeijao",
+      "rawName": "Requeijão cremoso Catupiry 200g",
+      "brand": "Catupiry",
+      "price": 586,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": false
+    },
+    {
+      "id": "dia-requeijao",
+      "marketId": "dia",
+      "productId": "requeijao",
+      "rawName": "Requeijão cremoso Catupiry 200g",
+      "brand": "Catupiry",
+      "price": 615,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-requeijao",
+      "marketId": "carrefour",
+      "productId": "requeijao",
+      "rawName": "Requeijão cremoso Catupiry 200g",
+      "brand": "Catupiry",
+      "price": 684,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-requeijao",
+      "marketId": "extra",
+      "productId": "requeijao",
+      "rawName": "Requeijão cremoso Catupiry 200g",
+      "brand": "Catupiry",
+      "price": 743,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-requeijao",
+      "marketId": "pao",
+      "productId": "requeijao",
+      "rawName": "Requeijão cremoso Catupiry 200g",
+      "brand": "Catupiry",
+      "price": 813,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-requeijao",
+      "marketId": "marche",
+      "productId": "requeijao",
+      "rawName": "Requeijão cremoso Catupiry 200g",
+      "brand": "Catupiry",
+      "price": 836,
+      "packageSize": 0.2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-banana-prata",
+      "marketId": "assai",
+      "productId": "banana-prata",
+      "rawName": "Banana prata 1kg",
+      "price": 657,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-banana-prata",
+      "marketId": "atacadao",
+      "productId": "banana-prata",
+      "rawName": "Banana prata 1kg",
+      "price": 574,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-banana-prata",
+      "marketId": "sams",
+      "productId": "banana-prata",
+      "rawName": "Banana prata 1kg",
+      "price": 676,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "dia-banana-prata",
+      "marketId": "dia",
+      "productId": "banana-prata",
+      "rawName": "Banana prata 1kg",
+      "price": 707,
+      "originalPrice": 860,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-banana-prata",
+      "marketId": "carrefour",
+      "productId": "banana-prata",
+      "rawName": "Banana prata 1kg",
+      "price": 799,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-banana-prata",
+      "marketId": "extra",
+      "productId": "banana-prata",
+      "rawName": "Banana prata 1kg",
+      "price": 852,
+      "originalPrice": 1002,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-banana-prata",
+      "marketId": "pao",
+      "productId": "banana-prata",
+      "rawName": "Banana prata 1kg",
+      "price": 835,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-banana-prata",
+      "marketId": "marche",
+      "productId": "banana-prata",
+      "rawName": "Banana prata 1kg",
+      "price": 1043,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-tomate",
+      "marketId": "assai",
+      "productId": "tomate",
+      "rawName": "Tomate 1kg",
+      "price": 847,
+      "originalPrice": 966,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-tomate",
+      "marketId": "atacadao",
+      "productId": "tomate",
+      "rawName": "Tomate 1kg",
+      "price": 791,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-tomate",
+      "marketId": "sams",
+      "productId": "tomate",
+      "rawName": "Tomate 1kg",
+      "price": 612,
+      "originalPrice": 783,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "22% OFF"
+    },
+    {
+      "id": "dia-tomate",
+      "marketId": "dia",
+      "productId": "tomate",
+      "rawName": "Tomate 1kg",
+      "price": 1003,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-tomate",
+      "marketId": "carrefour",
+      "productId": "tomate",
+      "rawName": "Tomate 1kg",
+      "price": 972,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-tomate",
+      "marketId": "extra",
+      "productId": "tomate",
+      "rawName": "Tomate 1kg",
+      "price": 948,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-tomate",
+      "marketId": "pao",
+      "productId": "tomate",
+      "rawName": "Tomate 1kg",
+      "price": 1073,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-tomate",
+      "marketId": "marche",
+      "productId": "tomate",
+      "rawName": "Tomate 1kg",
+      "price": 1163,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-batata",
+      "marketId": "assai",
+      "productId": "batata",
+      "rawName": "Batata lavada 1kg",
+      "price": 486,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-batata",
+      "marketId": "atacadao",
+      "productId": "batata",
+      "rawName": "Batata lavada 1kg",
+      "price": 580,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "dia-batata",
+      "marketId": "dia",
+      "productId": "batata",
+      "rawName": "Batata lavada 1kg",
+      "price": 571,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-batata",
+      "marketId": "carrefour",
+      "productId": "batata",
+      "rawName": "Batata lavada 2kg",
+      "price": 1384,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-batata",
+      "marketId": "pao",
+      "productId": "batata",
+      "rawName": "Batata lavada 1kg",
+      "price": 673,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-batata",
+      "marketId": "marche",
+      "productId": "batata",
+      "rawName": "Batata lavada 1kg",
+      "price": 888,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-cebola",
+      "marketId": "assai",
+      "productId": "cebola",
+      "rawName": "Cebola 1kg",
+      "price": 551,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-cebola",
+      "marketId": "sams",
+      "productId": "cebola",
+      "rawName": "Cebola 1kg",
+      "price": 569,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "dia-cebola",
+      "marketId": "dia",
+      "productId": "cebola",
+      "rawName": "Cebola 1kg",
+      "price": 654,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-cebola",
+      "marketId": "carrefour",
+      "productId": "cebola",
+      "rawName": "Cebola 1kg",
+      "price": 646,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-cebola",
+      "marketId": "extra",
+      "productId": "cebola",
+      "rawName": "Cebola 1kg",
+      "price": 704,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-cebola",
+      "marketId": "pao",
+      "productId": "cebola",
+      "rawName": "Cebola 1kg",
+      "price": 870,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-cebola",
+      "marketId": "marche",
+      "productId": "cebola",
+      "rawName": "Cebola 1kg",
+      "price": 799,
+      "originalPrice": 994,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "20% OFF"
+    },
+    {
+      "id": "assai-alface-crespa",
+      "marketId": "assai",
+      "productId": "alface-crespa",
+      "rawName": "Alface crespa 1 un",
+      "price": 291,
+      "originalPrice": 344,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true,
+      "promo": "15% OFF"
+    },
+    {
+      "id": "atacadao-alface-crespa",
+      "marketId": "atacadao",
+      "productId": "alface-crespa",
+      "rawName": "Alface crespa 1 un",
+      "price": 315,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "sams-alface-crespa",
+      "marketId": "sams",
+      "productId": "alface-crespa",
+      "rawName": "Alface crespa 1 un",
+      "price": 356,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "dia-alface-crespa",
+      "marketId": "dia",
+      "productId": "alface-crespa",
+      "rawName": "Alface crespa 1 un",
+      "price": 428,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "carrefour-alface-crespa",
+      "marketId": "carrefour",
+      "productId": "alface-crespa",
+      "rawName": "Alface crespa 1 un",
+      "price": 383,
+      "originalPrice": 470,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": false,
+      "promo": "18% OFF"
+    },
+    {
+      "id": "extra-alface-crespa",
+      "marketId": "extra",
+      "productId": "alface-crespa",
+      "rawName": "Alface crespa 1 un",
+      "price": 452,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "pao-alface-crespa",
+      "marketId": "pao",
+      "productId": "alface-crespa",
+      "rawName": "Alface crespa 1 un",
+      "price": 363,
+      "originalPrice": 445,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true,
+      "promo": "18% OFF"
+    },
+    {
+      "id": "marche-alface-crespa",
+      "marketId": "marche",
+      "productId": "alface-crespa",
+      "rawName": "Alface crespa 1 un",
+      "price": 588,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "atacadao-maca-fuji",
+      "marketId": "atacadao",
+      "productId": "maca-fuji",
+      "rawName": "Maçã Fuji 1kg",
+      "price": 908,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-maca-fuji",
+      "marketId": "sams",
+      "productId": "maca-fuji",
+      "rawName": "Maçã Fuji 1kg",
+      "price": 1003,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "dia-maca-fuji",
+      "marketId": "dia",
+      "productId": "maca-fuji",
+      "rawName": "Maçã Fuji 1kg",
+      "price": 945,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-maca-fuji",
+      "marketId": "carrefour",
+      "productId": "maca-fuji",
+      "rawName": "Maçã Fuji 1kg",
+      "price": 1009,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-maca-fuji",
+      "marketId": "extra",
+      "productId": "maca-fuji",
+      "rawName": "Maçã Fuji 1kg",
+      "price": 1129,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-peito-frango",
+      "marketId": "assai",
+      "productId": "peito-frango",
+      "rawName": "Peito de frango Sadia 1kg",
+      "brand": "Sadia",
+      "price": 1387,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-peito-frango",
+      "marketId": "atacadao",
+      "productId": "peito-frango",
+      "rawName": "Peito de frango Perdigão 1kg",
+      "brand": "Perdigão",
+      "price": 1418,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-peito-frango",
+      "marketId": "sams",
+      "productId": "peito-frango",
+      "rawName": "Peito de frango Seara 2kg",
+      "brand": "Seara",
+      "price": 3212,
+      "originalPrice": 3849,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "dia-peito-frango",
+      "marketId": "dia",
+      "productId": "peito-frango",
+      "rawName": "Peito de frango Perdigão 1kg",
+      "brand": "Perdigão",
+      "price": 1566,
+      "originalPrice": 1890,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-peito-frango",
+      "marketId": "carrefour",
+      "productId": "peito-frango",
+      "rawName": "Peito de frango Sadia 2kg",
+      "brand": "Sadia",
+      "price": 3683,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-peito-frango",
+      "marketId": "extra",
+      "productId": "peito-frango",
+      "rawName": "Peito de frango Seara 2kg",
+      "brand": "Seara",
+      "price": 2868,
+      "originalPrice": 3469,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true,
+      "promo": "17% OFF"
+    },
+    {
+      "id": "pao-peito-frango",
+      "marketId": "pao",
+      "productId": "peito-frango",
+      "rawName": "Peito de frango Seara 2kg",
+      "brand": "Seara",
+      "price": 3607,
+      "packageSize": 2,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-peito-frango",
+      "marketId": "marche",
+      "productId": "peito-frango",
+      "rawName": "Peito de frango Sadia 1kg",
+      "brand": "Sadia",
+      "price": 2200,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-patinho",
+      "marketId": "assai",
+      "productId": "patinho",
+      "rawName": "Patinho bovino Friboi 500g",
+      "brand": "Friboi",
+      "price": 1921,
+      "originalPrice": 2206,
+      "packageSize": 0.5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-patinho",
+      "marketId": "atacadao",
+      "productId": "patinho",
+      "rawName": "Patinho bovino Friboi 1kg",
+      "brand": "Friboi",
+      "price": 3769,
+      "originalPrice": 4515,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-patinho",
+      "marketId": "sams",
+      "productId": "patinho",
+      "rawName": "Patinho bovino Friboi 1kg",
+      "brand": "Friboi",
+      "price": 4219,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "dia-patinho",
+      "marketId": "dia",
+      "productId": "patinho",
+      "rawName": "Patinho bovino Friboi 1kg",
+      "brand": "Friboi",
+      "price": 4014,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-patinho",
+      "marketId": "carrefour",
+      "productId": "patinho",
+      "rawName": "Patinho bovino Swift 1kg",
+      "brand": "Swift",
+      "price": 4409,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-patinho",
+      "marketId": "extra",
+      "productId": "patinho",
+      "rawName": "Patinho bovino Swift 500g",
+      "brand": "Swift",
+      "price": 1997,
+      "packageSize": 0.5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-patinho",
+      "marketId": "pao",
+      "productId": "patinho",
+      "rawName": "Patinho bovino Friboi 1kg",
+      "brand": "Friboi",
+      "price": 4719,
+      "originalPrice": 5337,
+      "packageSize": 1,
+      "packageUnit": "kg",
+      "available": false,
+      "promo": "12% OFF"
+    },
+    {
+      "id": "marche-patinho",
+      "marketId": "marche",
+      "productId": "patinho",
+      "rawName": "Patinho bovino Friboi 500g",
+      "brand": "Friboi",
+      "price": 2645,
+      "packageSize": 0.5,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-linguica-cal",
+      "marketId": "atacadao",
+      "productId": "linguica-cal",
+      "rawName": "Linguiça calabresa Seara 400g",
+      "brand": "Seara",
+      "price": 866,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": false
+    },
+    {
+      "id": "sams-linguica-cal",
+      "marketId": "sams",
+      "productId": "linguica-cal",
+      "rawName": "Linguiça calabresa Seara 400g",
+      "brand": "Seara",
+      "price": 864,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-linguica-cal",
+      "marketId": "carrefour",
+      "productId": "linguica-cal",
+      "rawName": "Linguiça calabresa Perdigão 400g",
+      "brand": "Perdigão",
+      "price": 1123,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-linguica-cal",
+      "marketId": "extra",
+      "productId": "linguica-cal",
+      "rawName": "Linguiça calabresa Sadia 400g",
+      "brand": "Sadia",
+      "price": 937,
+      "originalPrice": 1086,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": false,
+      "promo": "14% OFF"
+    },
+    {
+      "id": "pao-linguica-cal",
+      "marketId": "pao",
+      "productId": "linguica-cal",
+      "rawName": "Linguiça calabresa Sadia 400g",
+      "brand": "Sadia",
+      "price": 1368,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-linguica-cal",
+      "marketId": "marche",
+      "productId": "linguica-cal",
+      "rawName": "Linguiça calabresa Seara 400g",
+      "brand": "Seara",
+      "price": 1274,
+      "packageSize": 0.4,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-ovos",
+      "marketId": "assai",
+      "productId": "ovos",
+      "rawName": "Ovos brancos Naturovos 30 un",
+      "brand": "Naturovos",
+      "price": 2421,
+      "packageSize": 30,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "atacadao-ovos",
+      "marketId": "atacadao",
+      "productId": "ovos",
+      "rawName": "Ovos brancos Mantiqueira 12 un",
+      "brand": "Mantiqueira",
+      "price": 977,
+      "originalPrice": 1217,
+      "packageSize": 12,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "sams-ovos",
+      "marketId": "sams",
+      "productId": "ovos",
+      "rawName": "Ovos brancos Mantiqueira 12 un",
+      "brand": "Mantiqueira",
+      "price": 1011,
+      "packageSize": 12,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "dia-ovos",
+      "marketId": "dia",
+      "productId": "ovos",
+      "rawName": "Ovos brancos Mantiqueira 30 un",
+      "brand": "Mantiqueira",
+      "price": 3274,
+      "packageSize": 30,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "carrefour-ovos",
+      "marketId": "carrefour",
+      "productId": "ovos",
+      "rawName": "Ovos brancos Mantiqueira 12 un",
+      "brand": "Mantiqueira",
+      "price": 1170,
+      "packageSize": 12,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "extra-ovos",
+      "marketId": "extra",
+      "productId": "ovos",
+      "rawName": "Ovos brancos Mantiqueira 30 un",
+      "brand": "Mantiqueira",
+      "price": 3232,
+      "packageSize": 30,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "pao-ovos",
+      "marketId": "pao",
+      "productId": "ovos",
+      "rawName": "Ovos brancos Mantiqueira 30 un",
+      "brand": "Mantiqueira",
+      "price": 3501,
+      "packageSize": 30,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "marche-ovos",
+      "marketId": "marche",
+      "productId": "ovos",
+      "rawName": "Ovos brancos Mantiqueira 30 un",
+      "brand": "Mantiqueira",
+      "price": 3782,
+      "packageSize": 30,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "assai-refri-cola",
+      "marketId": "assai",
+      "productId": "refri-cola",
+      "rawName": "Refrigerante de cola Pepsi 1,5L",
+      "brand": "Pepsi",
+      "price": 581,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": false
+    },
+    {
+      "id": "sams-refri-cola",
+      "marketId": "sams",
+      "productId": "refri-cola",
+      "rawName": "Refrigerante de cola Coca-Cola 1,5L",
+      "brand": "Coca-Cola",
+      "price": 628,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "dia-refri-cola",
+      "marketId": "dia",
+      "productId": "refri-cola",
+      "rawName": "Refrigerante de cola Pepsi 1,5L",
+      "brand": "Pepsi",
+      "price": 734,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "carrefour-refri-cola",
+      "marketId": "carrefour",
+      "productId": "refri-cola",
+      "rawName": "Refrigerante de cola Pepsi 1,5L",
+      "brand": "Pepsi",
+      "price": 679,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "extra-refri-cola",
+      "marketId": "extra",
+      "productId": "refri-cola",
+      "rawName": "Refrigerante de cola Pepsi 2L",
+      "brand": "Pepsi",
+      "price": 890,
+      "packageSize": 2,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "pao-refri-cola",
+      "marketId": "pao",
+      "productId": "refri-cola",
+      "rawName": "Refrigerante de cola Pepsi 1,5L",
+      "brand": "Pepsi",
+      "price": 808,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "marche-refri-cola",
+      "marketId": "marche",
+      "productId": "refri-cola",
+      "rawName": "Refrigerante de cola Pepsi 1,5L",
+      "brand": "Pepsi",
+      "price": 1003,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "assai-suco-uva",
+      "marketId": "assai",
+      "productId": "suco-uva",
+      "rawName": "Suco de uva integral Campo Largo 1L",
+      "brand": "Campo Largo",
+      "price": 1375,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "atacadao-suco-uva",
+      "marketId": "atacadao",
+      "productId": "suco-uva",
+      "rawName": "Suco de uva integral Aurora 1L",
+      "brand": "Aurora",
+      "price": 1358,
+      "originalPrice": 1596,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "sams-suco-uva",
+      "marketId": "sams",
+      "productId": "suco-uva",
+      "rawName": "Suco de uva integral Aurora 1L",
+      "brand": "Aurora",
+      "price": 1151,
+      "originalPrice": 1326,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true,
+      "promo": "13% OFF"
+    },
+    {
+      "id": "dia-suco-uva",
+      "marketId": "dia",
+      "productId": "suco-uva",
+      "rawName": "Suco de uva integral Aurora 1L",
+      "brand": "Aurora",
+      "price": 1433,
+      "originalPrice": 1804,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "carrefour-suco-uva",
+      "marketId": "carrefour",
+      "productId": "suco-uva",
+      "rawName": "Suco de uva integral Aurora 1L",
+      "brand": "Aurora",
+      "price": 1479,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "extra-suco-uva",
+      "marketId": "extra",
+      "productId": "suco-uva",
+      "rawName": "Suco de uva integral Campo Largo 1,5L",
+      "brand": "Campo Largo",
+      "price": 2327,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "pao-suco-uva",
+      "marketId": "pao",
+      "productId": "suco-uva",
+      "rawName": "Suco de uva integral Campo Largo 1,5L",
+      "brand": "Campo Largo",
+      "price": 2409,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "marche-suco-uva",
+      "marketId": "marche",
+      "productId": "suco-uva",
+      "rawName": "Suco de uva integral Aurora 1L",
+      "brand": "Aurora",
+      "price": 2023,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "assai-cerveja-lata",
+      "marketId": "assai",
+      "productId": "cerveja-lata",
+      "rawName": "Cerveja lata 350ml Brahma 12 un",
+      "brand": "Brahma",
+      "price": 3545,
+      "packageSize": 12,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "atacadao-cerveja-lata",
+      "marketId": "atacadao",
+      "productId": "cerveja-lata",
+      "rawName": "Cerveja lata 350ml Original 12 un",
+      "brand": "Original",
+      "price": 3898,
+      "packageSize": 12,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "sams-cerveja-lata",
+      "marketId": "sams",
+      "productId": "cerveja-lata",
+      "rawName": "Cerveja lata 350ml Brahma 6 un",
+      "brand": "Brahma",
+      "price": 1769,
+      "packageSize": 6,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "dia-cerveja-lata",
+      "marketId": "dia",
+      "productId": "cerveja-lata",
+      "rawName": "Cerveja lata 350ml Heineken 12 un",
+      "brand": "Heineken",
+      "price": 4195,
+      "packageSize": 12,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "carrefour-cerveja-lata",
+      "marketId": "carrefour",
+      "productId": "cerveja-lata",
+      "rawName": "Cerveja lata 350ml Heineken 12 un",
+      "brand": "Heineken",
+      "price": 4399,
+      "packageSize": 12,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "extra-cerveja-lata",
+      "marketId": "extra",
+      "productId": "cerveja-lata",
+      "rawName": "Cerveja lata 350ml Original 6 un",
+      "brand": "Original",
+      "price": 2107,
+      "packageSize": 6,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "pao-cerveja-lata",
+      "marketId": "pao",
+      "productId": "cerveja-lata",
+      "rawName": "Cerveja lata 350ml Heineken 12 un",
+      "brand": "Heineken",
+      "price": 4909,
+      "packageSize": 12,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "assai-agua-mineral",
+      "marketId": "assai",
+      "productId": "agua-mineral",
+      "rawName": "Água mineral sem gás Bonafont 1,5L",
+      "brand": "Bonafont",
+      "price": 284,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "atacadao-agua-mineral",
+      "marketId": "atacadao",
+      "productId": "agua-mineral",
+      "rawName": "Água mineral sem gás Bonafont 1,5L",
+      "brand": "Bonafont",
+      "price": 263,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "dia-agua-mineral",
+      "marketId": "dia",
+      "productId": "agua-mineral",
+      "rawName": "Água mineral sem gás Bonafont 5L",
+      "brand": "Bonafont",
+      "price": 1110,
+      "packageSize": 5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "carrefour-agua-mineral",
+      "marketId": "carrefour",
+      "productId": "agua-mineral",
+      "rawName": "Água mineral sem gás Minalba 1,5L",
+      "brand": "Minalba",
+      "price": 331,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "extra-agua-mineral",
+      "marketId": "extra",
+      "productId": "agua-mineral",
+      "rawName": "Água mineral sem gás Minalba 1,5L",
+      "brand": "Minalba",
+      "price": 345,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": false
+    },
+    {
+      "id": "pao-agua-mineral",
+      "marketId": "pao",
+      "productId": "agua-mineral",
+      "rawName": "Água mineral sem gás Minalba 1,5L",
+      "brand": "Minalba",
+      "price": 405,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "marche-agua-mineral",
+      "marketId": "marche",
+      "productId": "agua-mineral",
+      "rawName": "Água mineral sem gás Crystal 5L",
+      "brand": "Crystal",
+      "price": 1233,
+      "packageSize": 5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "assai-cha-mate",
+      "marketId": "assai",
+      "productId": "cha-mate",
+      "rawName": "Chá mate natural Leão 1,5L",
+      "brand": "Leão",
+      "price": 596,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "atacadao-cha-mate",
+      "marketId": "atacadao",
+      "productId": "cha-mate",
+      "rawName": "Chá mate natural Leão 1,5L",
+      "brand": "Leão",
+      "price": 698,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "sams-cha-mate",
+      "marketId": "sams",
+      "productId": "cha-mate",
+      "rawName": "Chá mate natural Matte Leão 1,5L",
+      "brand": "Matte Leão",
+      "price": 635,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "dia-cha-mate",
+      "marketId": "dia",
+      "productId": "cha-mate",
+      "rawName": "Chá mate natural Matte Leão 1,5L",
+      "brand": "Matte Leão",
+      "price": 713,
+      "originalPrice": 861,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "carrefour-cha-mate",
+      "marketId": "carrefour",
+      "productId": "cha-mate",
+      "rawName": "Chá mate natural Matte Leão 1,5L",
+      "brand": "Matte Leão",
+      "price": 726,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "extra-cha-mate",
+      "marketId": "extra",
+      "productId": "cha-mate",
+      "rawName": "Chá mate natural Leão 1,5L",
+      "brand": "Leão",
+      "price": 793,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "pao-cha-mate",
+      "marketId": "pao",
+      "productId": "cha-mate",
+      "rawName": "Chá mate natural Matte Leão 1,5L",
+      "brand": "Matte Leão",
+      "price": 937,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "marche-cha-mate",
+      "marketId": "marche",
+      "productId": "cha-mate",
+      "rawName": "Chá mate natural Matte Leão 1,5L",
+      "brand": "Matte Leão",
+      "price": 966,
+      "originalPrice": 1181,
+      "packageSize": 1.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "assai-detergente",
+      "marketId": "assai",
+      "productId": "detergente",
+      "rawName": "Detergente neutro Limpol 500ml",
+      "brand": "Limpol",
+      "price": 273,
+      "packageSize": 0.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "atacadao-detergente",
+      "marketId": "atacadao",
+      "productId": "detergente",
+      "rawName": "Detergente neutro Ypê 500ml",
+      "brand": "Ypê",
+      "price": 273,
+      "packageSize": 0.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "sams-detergente",
+      "marketId": "sams",
+      "productId": "detergente",
+      "rawName": "Detergente neutro Ypê 500ml",
+      "brand": "Ypê",
+      "price": 274,
+      "originalPrice": 341,
+      "packageSize": 0.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "dia-detergente",
+      "marketId": "dia",
+      "productId": "detergente",
+      "rawName": "Detergente neutro Limpol 500ml",
+      "brand": "Limpol",
+      "price": 272,
+      "originalPrice": 326,
+      "packageSize": 0.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "carrefour-detergente",
+      "marketId": "carrefour",
+      "productId": "detergente",
+      "rawName": "Detergente neutro Minuano 500ml",
+      "brand": "Minuano",
+      "price": 270,
+      "originalPrice": 308,
+      "packageSize": 0.5,
+      "packageUnit": "L",
+      "available": false,
+      "promo": "12% OFF"
+    },
+    {
+      "id": "extra-detergente",
+      "marketId": "extra",
+      "productId": "detergente",
+      "rawName": "Detergente neutro Ypê 500ml",
+      "brand": "Ypê",
+      "price": 322,
+      "packageSize": 0.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "pao-detergente",
+      "marketId": "pao",
+      "productId": "detergente",
+      "rawName": "Detergente neutro Limpol 500ml",
+      "brand": "Limpol",
+      "price": 320,
+      "packageSize": 0.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "marche-detergente",
+      "marketId": "marche",
+      "productId": "detergente",
+      "rawName": "Detergente neutro Limpol 500ml",
+      "brand": "Limpol",
+      "price": 367,
+      "originalPrice": 429,
+      "packageSize": 0.5,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "assai-sabao-po",
+      "marketId": "assai",
+      "productId": "sabao-po",
+      "rawName": "Sabão em pó Tixan 1,6kg",
+      "brand": "Tixan",
+      "price": 1704,
+      "packageSize": 1.6,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "atacadao-sabao-po",
+      "marketId": "atacadao",
+      "productId": "sabao-po",
+      "rawName": "Sabão em pó Tixan 800g",
+      "brand": "Tixan",
+      "price": 839,
+      "packageSize": 0.8,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "sams-sabao-po",
+      "marketId": "sams",
+      "productId": "sabao-po",
+      "rawName": "Sabão em pó Omo 1,6kg",
+      "brand": "Omo",
+      "price": 1748,
+      "packageSize": 1.6,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "dia-sabao-po",
+      "marketId": "dia",
+      "productId": "sabao-po",
+      "rawName": "Sabão em pó Brilhante 800g",
+      "brand": "Brilhante",
+      "price": 834,
+      "packageSize": 0.8,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "carrefour-sabao-po",
+      "marketId": "carrefour",
+      "productId": "sabao-po",
+      "rawName": "Sabão em pó Brilhante 1,6kg",
+      "brand": "Brilhante",
+      "price": 1905,
+      "packageSize": 1.6,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "extra-sabao-po",
+      "marketId": "extra",
+      "productId": "sabao-po",
+      "rawName": "Sabão em pó Omo 800g",
+      "brand": "Omo",
+      "price": 1071,
+      "packageSize": 0.8,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "pao-sabao-po",
+      "marketId": "pao",
+      "productId": "sabao-po",
+      "rawName": "Sabão em pó Brilhante 1,6kg",
+      "brand": "Brilhante",
+      "price": 2097,
+      "packageSize": 1.6,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "marche-sabao-po",
+      "marketId": "marche",
+      "productId": "sabao-po",
+      "rawName": "Sabão em pó Omo 800g",
+      "brand": "Omo",
+      "price": 1118,
+      "packageSize": 0.8,
+      "packageUnit": "kg",
+      "available": true
+    },
+    {
+      "id": "assai-amaciante",
+      "marketId": "assai",
+      "productId": "amaciante",
+      "rawName": "Amaciante de roupas Comfort 2L",
+      "brand": "Comfort",
+      "price": 1172,
+      "packageSize": 2,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "atacadao-amaciante",
+      "marketId": "atacadao",
+      "productId": "amaciante",
+      "rawName": "Amaciante de roupas Comfort 1L",
+      "brand": "Comfort",
+      "price": 568,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "sams-amaciante",
+      "marketId": "sams",
+      "productId": "amaciante",
+      "rawName": "Amaciante de roupas Mon Bijou 1L",
+      "brand": "Mon Bijou",
+      "price": 532,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "carrefour-amaciante",
+      "marketId": "carrefour",
+      "productId": "amaciante",
+      "rawName": "Amaciante de roupas Downy 1L",
+      "brand": "Downy",
+      "price": 585,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "extra-amaciante",
+      "marketId": "extra",
+      "productId": "amaciante",
+      "rawName": "Amaciante de roupas Downy 1L",
+      "brand": "Downy",
+      "price": 691,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "pao-amaciante",
+      "marketId": "pao",
+      "productId": "amaciante",
+      "rawName": "Amaciante de roupas Comfort 2L",
+      "brand": "Comfort",
+      "price": 1573,
+      "packageSize": 2,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "marche-amaciante",
+      "marketId": "marche",
+      "productId": "amaciante",
+      "rawName": "Amaciante de roupas Comfort 1L",
+      "brand": "Comfort",
+      "price": 798,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "atacadao-desinfetante",
+      "marketId": "atacadao",
+      "productId": "desinfetante",
+      "rawName": "Desinfetante Pinho Sol 1L",
+      "brand": "Pinho Sol",
+      "price": 361,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "sams-desinfetante",
+      "marketId": "sams",
+      "productId": "desinfetante",
+      "rawName": "Desinfetante Pinho Sol 1L",
+      "brand": "Pinho Sol",
+      "price": 429,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "dia-desinfetante",
+      "marketId": "dia",
+      "productId": "desinfetante",
+      "rawName": "Desinfetante Ypê 1L",
+      "brand": "Ypê",
+      "price": 413,
+      "packageSize": 1,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "carrefour-desinfetante",
+      "marketId": "carrefour",
+      "productId": "desinfetante",
+      "rawName": "Desinfetante Pinho Sol 2L",
+      "brand": "Pinho Sol",
+      "price": 819,
+      "packageSize": 2,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "extra-desinfetante",
+      "marketId": "extra",
+      "productId": "desinfetante",
+      "rawName": "Desinfetante Veja 2L",
+      "brand": "Veja",
+      "price": 962,
+      "originalPrice": 1242,
+      "packageSize": 2,
+      "packageUnit": "L",
+      "available": false
+    },
+    {
+      "id": "pao-desinfetante",
+      "marketId": "pao",
+      "productId": "desinfetante",
+      "rawName": "Desinfetante Veja 2L",
+      "brand": "Veja",
+      "price": 874,
+      "originalPrice": 1114,
+      "packageSize": 2,
+      "packageUnit": "L",
+      "available": true,
+      "promo": "22% OFF"
+    },
+    {
+      "id": "assai-papel-higienico",
+      "marketId": "assai",
+      "productId": "papel-higienico",
+      "rawName": "Papel higiênico folha dupla Sublime 12 un",
+      "brand": "Sublime",
+      "price": 1532,
+      "originalPrice": 1806,
+      "packageSize": 12,
+      "packageUnit": "un",
+      "available": false,
+      "promo": "15% OFF"
+    },
+    {
+      "id": "atacadao-papel-higienico",
+      "marketId": "atacadao",
+      "productId": "papel-higienico",
+      "rawName": "Papel higiênico folha dupla Personal 4 un",
+      "brand": "Personal",
+      "price": 693,
+      "packageSize": 4,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "sams-papel-higienico",
+      "marketId": "sams",
+      "productId": "papel-higienico",
+      "rawName": "Papel higiênico folha dupla Sublime 4 un",
+      "brand": "Sublime",
+      "price": 671,
+      "originalPrice": 850,
+      "packageSize": 4,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "carrefour-papel-higienico",
+      "marketId": "carrefour",
+      "productId": "papel-higienico",
+      "rawName": "Papel higiênico folha dupla Personal 12 un",
+      "brand": "Personal",
+      "price": 2067,
+      "packageSize": 12,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "pao-papel-higienico",
+      "marketId": "pao",
+      "productId": "papel-higienico",
+      "rawName": "Papel higiênico folha dupla Personal 4 un",
+      "brand": "Personal",
+      "price": 858,
+      "originalPrice": 972,
+      "packageSize": 4,
+      "packageUnit": "un",
+      "available": true,
+      "promo": "12% OFF"
+    },
+    {
+      "id": "marche-papel-higienico",
+      "marketId": "marche",
+      "productId": "papel-higienico",
+      "rawName": "Papel higiênico folha dupla Neve 12 un",
+      "brand": "Neve",
+      "price": 3023,
+      "originalPrice": 3521,
+      "packageSize": 12,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "assai-sabonete",
+      "marketId": "assai",
+      "productId": "sabonete",
+      "rawName": "Sabonete em barra Dove 1 un",
+      "brand": "Dove",
+      "price": 240,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "atacadao-sabonete",
+      "marketId": "atacadao",
+      "productId": "sabonete",
+      "rawName": "Sabonete em barra Protex 1 un",
+      "brand": "Protex",
+      "price": 230,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "sams-sabonete",
+      "marketId": "sams",
+      "productId": "sabonete",
+      "rawName": "Sabonete em barra Dove 5 un",
+      "brand": "Dove",
+      "price": 1135,
+      "packageSize": 5,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "carrefour-sabonete",
+      "marketId": "carrefour",
+      "productId": "sabonete",
+      "rawName": "Sabonete em barra Lux 1 un",
+      "brand": "Lux",
+      "price": 236,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "extra-sabonete",
+      "marketId": "extra",
+      "productId": "sabonete",
+      "rawName": "Sabonete em barra Protex 1 un",
+      "brand": "Protex",
+      "price": 296,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "pao-sabonete",
+      "marketId": "pao",
+      "productId": "sabonete",
+      "rawName": "Sabonete em barra Lux 1 un",
+      "brand": "Lux",
+      "price": 302,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "marche-sabonete",
+      "marketId": "marche",
+      "productId": "sabonete",
+      "rawName": "Sabonete em barra Lux 1 un",
+      "brand": "Lux",
+      "price": 315,
+      "originalPrice": 361,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true,
+      "promo": "13% OFF"
+    },
+    {
+      "id": "assai-shampoo",
+      "marketId": "assai",
+      "productId": "shampoo",
+      "rawName": "Shampoo Pantene 400ml",
+      "brand": "Pantene",
+      "price": 1548,
+      "packageSize": 0.4,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "atacadao-shampoo",
+      "marketId": "atacadao",
+      "productId": "shampoo",
+      "rawName": "Shampoo Elseve 400ml",
+      "brand": "Elseve",
+      "price": 1235,
+      "packageSize": 0.4,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "sams-shampoo",
+      "marketId": "sams",
+      "productId": "shampoo",
+      "rawName": "Shampoo Pantene 400ml",
+      "brand": "Pantene",
+      "price": 1541,
+      "packageSize": 0.4,
+      "packageUnit": "L",
+      "available": false
+    },
+    {
+      "id": "dia-shampoo",
+      "marketId": "dia",
+      "productId": "shampoo",
+      "rawName": "Shampoo Seda 400ml",
+      "brand": "Seda",
+      "price": 1474,
+      "packageSize": 0.4,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "carrefour-shampoo",
+      "marketId": "carrefour",
+      "productId": "shampoo",
+      "rawName": "Shampoo Pantene 400ml",
+      "brand": "Pantene",
+      "price": 1800,
+      "packageSize": 0.4,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "extra-shampoo",
+      "marketId": "extra",
+      "productId": "shampoo",
+      "rawName": "Shampoo Elseve 400ml",
+      "brand": "Elseve",
+      "price": 1914,
+      "packageSize": 0.4,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "pao-shampoo",
+      "marketId": "pao",
+      "productId": "shampoo",
+      "rawName": "Shampoo Pantene 350ml",
+      "brand": "Pantene",
+      "price": 1728,
+      "packageSize": 0.35,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "marche-shampoo",
+      "marketId": "marche",
+      "productId": "shampoo",
+      "rawName": "Shampoo Elseve 350ml",
+      "brand": "Elseve",
+      "price": 2028,
+      "packageSize": 0.35,
+      "packageUnit": "L",
+      "available": true
+    },
+    {
+      "id": "assai-creme-dental",
+      "marketId": "assai",
+      "productId": "creme-dental",
+      "rawName": "Creme dental Colgate 1 un",
+      "brand": "Colgate",
+      "price": 381,
+      "originalPrice": 462,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true,
+      "promo": "18% OFF"
+    },
+    {
+      "id": "atacadao-creme-dental",
+      "marketId": "atacadao",
+      "productId": "creme-dental",
+      "rawName": "Creme dental Sorriso 1 un",
+      "brand": "Sorriso",
+      "price": 462,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "sams-creme-dental",
+      "marketId": "sams",
+      "productId": "creme-dental",
+      "rawName": "Creme dental Sorriso 1 un",
+      "brand": "Sorriso",
+      "price": 425,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "dia-creme-dental",
+      "marketId": "dia",
+      "productId": "creme-dental",
+      "rawName": "Creme dental Sorriso 1 un",
+      "brand": "Sorriso",
+      "price": 441,
+      "originalPrice": 522,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true,
+      "promo": "16% OFF"
+    },
+    {
+      "id": "extra-creme-dental",
+      "marketId": "extra",
+      "productId": "creme-dental",
+      "rawName": "Creme dental Colgate 3 un",
+      "brand": "Colgate",
+      "price": 1680,
+      "packageSize": 3,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "pao-creme-dental",
+      "marketId": "pao",
+      "productId": "creme-dental",
+      "rawName": "Creme dental Sorriso 1 un",
+      "brand": "Sorriso",
+      "price": 679,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "marche-creme-dental",
+      "marketId": "marche",
+      "productId": "creme-dental",
+      "rawName": "Creme dental Sorriso 1 un",
+      "brand": "Sorriso",
+      "price": 700,
+      "packageSize": 1,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "atacadao-papel-toalha",
+      "marketId": "atacadao",
+      "productId": "papel-toalha",
+      "rawName": "Papel toalha Kitchen 2 un",
+      "brand": "Kitchen",
+      "price": 847,
+      "packageSize": 2,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "sams-papel-toalha",
+      "marketId": "sams",
+      "productId": "papel-toalha",
+      "rawName": "Papel toalha Snob 2 un",
+      "brand": "Snob",
+      "price": 754,
+      "packageSize": 2,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "dia-papel-toalha",
+      "marketId": "dia",
+      "productId": "papel-toalha",
+      "rawName": "Papel toalha Neve 2 un",
+      "brand": "Neve",
+      "price": 943,
+      "packageSize": 2,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "carrefour-papel-toalha",
+      "marketId": "carrefour",
+      "productId": "papel-toalha",
+      "rawName": "Papel toalha Snob 2 un",
+      "brand": "Snob",
+      "price": 1011,
+      "packageSize": 2,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "extra-papel-toalha",
+      "marketId": "extra",
+      "productId": "papel-toalha",
+      "rawName": "Papel toalha Neve 2 un",
+      "brand": "Neve",
+      "price": 883,
+      "packageSize": 2,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "pao-papel-toalha",
+      "marketId": "pao",
+      "productId": "papel-toalha",
+      "rawName": "Papel toalha Snob 2 un",
+      "brand": "Snob",
+      "price": 953,
+      "originalPrice": 1208,
+      "packageSize": 2,
+      "packageUnit": "un",
+      "available": true,
+      "promo": "21% OFF"
+    },
+    {
+      "id": "marche-papel-toalha",
+      "marketId": "marche",
+      "productId": "papel-toalha",
+      "rawName": "Papel toalha Neve 2 un",
+      "brand": "Neve",
+      "price": 1082,
+      "packageSize": 2,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "assai-absorvente",
+      "marketId": "assai",
+      "productId": "absorvente",
+      "rawName": "Absorvente com abas Always 16 un",
+      "brand": "Always",
+      "price": 1554,
+      "packageSize": 16,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "atacadao-absorvente",
+      "marketId": "atacadao",
+      "productId": "absorvente",
+      "rawName": "Absorvente com abas Sempre Livre 16 un",
+      "brand": "Sempre Livre",
+      "price": 1466,
+      "packageSize": 16,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "sams-absorvente",
+      "marketId": "sams",
+      "productId": "absorvente",
+      "rawName": "Absorvente com abas Intimus 8 un",
+      "brand": "Intimus",
+      "price": 828,
+      "packageSize": 8,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "dia-absorvente",
+      "marketId": "dia",
+      "productId": "absorvente",
+      "rawName": "Absorvente com abas Intimus 8 un",
+      "brand": "Intimus",
+      "price": 909,
+      "packageSize": 8,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "carrefour-absorvente",
+      "marketId": "carrefour",
+      "productId": "absorvente",
+      "rawName": "Absorvente com abas Sempre Livre 8 un",
+      "brand": "Sempre Livre",
+      "price": 864,
+      "packageSize": 8,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "extra-absorvente",
+      "marketId": "extra",
+      "productId": "absorvente",
+      "rawName": "Absorvente com abas Always 8 un",
+      "brand": "Always",
+      "price": 951,
+      "packageSize": 8,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "pao-absorvente",
+      "marketId": "pao",
+      "productId": "absorvente",
+      "rawName": "Absorvente com abas Intimus 8 un",
+      "brand": "Intimus",
+      "price": 1052,
+      "packageSize": 8,
+      "packageUnit": "un",
+      "available": true
+    },
+    {
+      "id": "marche-absorvente",
+      "marketId": "marche",
+      "productId": "absorvente",
+      "rawName": "Absorvente com abas Intimus 16 un",
+      "brand": "Intimus",
+      "price": 2590,
+      "originalPrice": 2986,
+      "packageSize": 16,
+      "packageUnit": "un",
+      "available": true
+    }
+  ]
+}

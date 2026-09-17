@@ -1,0 +1,137 @@
+/**
+ * Design tokens da Feira Inteligente.
+ *
+ * A paleta categórica (--series-1..8, uma cor por mercado) foi VALIDADA com o
+ * validador de paleta em ambos os modos, na lista de pares adjacentes:
+ *   light — pior par adjacente CVD ΔE 9.1 · visão normal ΔE 19.6
+ *   dark  — pior par adjacente CVD ΔE 8.4 · visão normal ΔE 19.3
+ * No modo claro, 3 slots (aqua, amarelo, magenta) ficam abaixo de 3:1 contra a
+ * superfície: vale a REGRA DE RELEVO — o nome do mercado e o preço são sempre
+ * rótulos de texto visíveis, e existe visão de tabela. A cor nunca carrega
+ * significado sozinha.
+ *
+ * Ordem dos slots é o mecanismo de segurança para daltonismo — não reordene,
+ * não gere um 9º tom: o 9º mercado vira "Outros".
+ */
+
+:root {
+  color-scheme: light;
+
+  /* superfícies */
+  --surface-0: #f7f7f5;
+  --surface-1: #fcfcfb;
+  --surface-2: #f0efec;
+  --border: #dedcd6;
+  --border-strong: #c5c3bb;
+
+  /* tinta — texto NUNCA usa a cor da série */
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #78766f;
+  --text-inverse: #ffffff;
+
+  /* categórica: um slot por mercado, em ordem fixa */
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-5: #e87ba4;
+  --series-6: #008300;
+  --series-7: #4a3aa7;
+  --series-8: #e34948;
+
+  /* status — reservado, nunca reaproveitado como série */
+  --status-good: #0ca30c;
+  --status-warning: #fab219;
+  --status-serious: #ec835a;
+  --status-critical: #d03b3b;
+
+  /* sequencial (magnitude: quão caro) — um hue, claro→escuro */
+  --seq-100: #cde2fb;
+  --seq-250: #86b6ef;
+  --seq-400: #3987e5;
+  --seq-550: #1c5cab;
+  --seq-700: #0d366b;
+
+  --accent: #2a78d6;
+  --accent-ink: #ffffff;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow-1: 0 1px 2px rgb(11 11 11 / 0.06), 0 1px 3px rgb(11 11 11 / 0.08);
+  --shadow-2: 0 4px 12px rgb(11 11 11 / 0.10);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme='light'])) {
+    color-scheme: dark;
+
+    --surface-0: #121211;
+    --surface-1: #1a1a19;
+    --surface-2: #242423;
+    --border: #383835;
+    --border-strong: #4d4c48;
+
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #96958c;
+    --text-inverse: #0b0b0b;
+
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --series-4: #c98500;
+    --series-5: #d55181;
+    --series-6: #008300;
+    --series-7: #9085e9;
+    --series-8: #e66767;
+
+    --seq-100: #0d366b;
+    --seq-250: #184f95;
+    --seq-400: #2a78d6;
+    --seq-550: #5598e7;
+    --seq-700: #9ec5f4;
+
+    --accent: #3987e5;
+    --accent-ink: #ffffff;
+
+    --shadow-1: 0 1px 2px rgb(0 0 0 / 0.4), 0 1px 3px rgb(0 0 0 / 0.3);
+    --shadow-2: 0 4px 12px rgb(0 0 0 / 0.5);
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --surface-0: #121211;
+  --surface-1: #1a1a19;
+  --surface-2: #242423;
+  --border: #383835;
+  --border-strong: #4d4c48;
+
+  --text-primary: #ffffff;
+  --text-secondary: #c3c2b7;
+  --text-muted: #96958c;
+  --text-inverse: #0b0b0b;
+
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-5: #d55181;
+  --series-6: #008300;
+  --series-7: #9085e9;
+  --series-8: #e66767;
+
+  --seq-100: #0d366b;
+  --seq-250: #184f95;
+  --seq-400: #2a78d6;
+  --seq-550: #5598e7;
+  --seq-700: #9ec5f4;
+
+  --accent: #3987e5;
+  --accent-ink: #ffffff;
+
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.4), 0 1px 3px rgb(0 0 0 / 0.3);
+  --shadow-2: 0 4px 12px rgb(0 0 0 / 0.5);
+}
